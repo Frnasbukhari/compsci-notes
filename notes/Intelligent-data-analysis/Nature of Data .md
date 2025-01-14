@@ -34,6 +34,8 @@ Data representations, whether signals, images, videos, or text, are fundamentall
 
 <img src="https://i.ytimg.com/vi/l4j4XgVbuxc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCXsi22xXVMFFoLOtBnczKHoIYX2Q" alt="Cartesian" width="800">
 
+---
+
 ### 2.4 Types of Relations
 Relations, as subsets of Cartesian products, can have specific constraints:
 1. **Functions**: Each element in the domain maps to at most one image (e.g., variables).
