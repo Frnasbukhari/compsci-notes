@@ -1,6 +1,6 @@
 # Nature of Data: Introduction to Intelligent Data Analysis
 
-[Listen to the recording](https://notebooklm.google.com/notebook/414c1910-4899-4f7e-b8fe-b1f280274d39/audio)
+[Listen to the AI generated overview podcast on this lecture!](https://notebooklm.google.com/notebook/414c1910-4899-4f7e-b8fe-b1f280274d39/audio)
 
 ## 1. Understanding the Nature of Data
 Data representations like signals, images, videos, and text are fundamentally equivalent from a mathematical perspective. They are:
@@ -8,7 +8,7 @@ Data representations like signals, images, videos, and text are fundamentally eq
 - **Human-Defined Semantics**: Meaning is assigned by humans; the format influences ease of manipulation but has no inherent mathematical limitations.
 
 
-![Diagram showing various data formats (e.g., image, text, video) represented as points in a 3D space.](INSERT_IMAGE_LINK_HERE)
+![various data formats (e.g., image, text, video)](images/nature of data.png)
 
 ## 2. Data as Points in Space
 ### Sets and Relations
