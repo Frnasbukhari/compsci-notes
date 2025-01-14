@@ -76,9 +76,9 @@ Data analysis can be broken into two key activities:
 
 ---
 
-## 4. Properties and Measurements
+## 4. Properties of sets
 
-### 4.1 Properties, Characteristics, and Measurements
+### 4.1 Key definitions
 1. **Characteristic**: A quantity or quality of an object that can be observed or analyzed.
 2. **Measurement**: The assignment of a label to a characteristic of an object, often to enable comparisons.
    - This involves defining a **functional relation** between elements of a set and a set of labels.
