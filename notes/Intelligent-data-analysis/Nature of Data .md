@@ -12,6 +12,7 @@ Data representations, whether signals, images, videos, or text, are fundamentall
 - **Representation Matters**: While the format does not impose mathematical limitations, it impacts the convenience of data manipulation.
 
 
+
 ## 2. Data as Points in Space
 
 ### 2.1 Sets and Elements
