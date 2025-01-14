@@ -28,12 +28,12 @@ Data can be understood and analyzed through fundamental mathematical constructs.
 ### Cartesian Product
 - **Definition**: Combines multiple sets into one by creating ordered tuples. For example:
   - \( A = \{1, 2\}, B = \{x, y\} \)
-  - \( A \times B = \{(1, x), (1, y), (2, x), (2, y)\} \).
+  - \( A x B = \{(1, x), (1, y), (2, x), (2, y)\} \).
 - **Implications**:
   - Multivariate data analysis often uses Cartesian products to combine dimensions into one.
   - Complex data structures like multimodal data fusion leverage Cartesian products at higher abstraction levels.
 
-![Visualization of Cartesian product combining two sets.](INSERT_IMAGE_LINK_HERE)
+![Visualization of Cartesian product combining two sets.](https://www.google.com/url?sa=i&url=https%3A%2F%2Fbyjus.com%2Fmaths%2Fcartesian-products-of-sets%2F&psig=AOvVaw3VoaGvrKhqjMUr-SlFXKsq&ust=1736904897523000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJi3pJaJ9IoDFQAAAAAdAAAAABAE)
 
 ### Types of Relations
 Relations, as subsets of Cartesian products, can have specific constraints:
