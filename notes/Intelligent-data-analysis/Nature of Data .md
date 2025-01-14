@@ -33,6 +33,7 @@ Data can be understood and analyzed through fundamental mathematical constructs.
   - Complex data structures like multimodal data fusion leverage Cartesian products at higher abstraction levels.
 
 <img src="https://i.ytimg.com/vi/l4j4XgVbuxc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCXsi22xXVMFFoLOtBnczKHoIYX2Q" alt="Cartesian" width="800">
+
 ### Types of Relations
 Relations, as subsets of Cartesian products, can have specific constraints:
 1. **Functions**: Each element in the domain maps to at most one image (e.g., variables).
