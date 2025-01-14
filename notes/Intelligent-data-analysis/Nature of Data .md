@@ -2,13 +2,15 @@
 
 [Listen to the AI generated overview podcast on this lecture!](https://notebooklm.google.com/notebook/414c1910-4899-4f7e-b8fe-b1f280274d39/audio)
 
+
 ## 1. Understanding the Nature of Data
+
+<img src="../../images/nature_of_data.png" alt="Nature of Data" width="800">
+
 Data representations, whether signals, images, videos, or text, are fundamentally equivalent from a mathematical perspective. Key insights include:
 - **Points in Space**: All data can be treated as points in a structured set, regardless of its format.
 - **Human-Defined Semantics**: The meaning of data is assigned by humans, while the format primarily affects ease of manipulation, not mathematical properties.
 - **Representation Matters**: While the format does not impose mathematical limitations, it impacts the convenience of data manipulation.
-
-<img src="../../images/nature_of_data.png" alt="Nature of Data" width="800">
 
 ---
 
