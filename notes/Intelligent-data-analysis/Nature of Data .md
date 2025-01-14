@@ -55,13 +55,11 @@ Relations can be represented in various ways:
 4. Tables of tuples.
 5. Graphical depictions.
 
-![Examples of relation representations: tables, graphs, and adjacency matrices.](INSERT_IMAGE_LINK_HERE)
+<img src="https://cdn1.byjus.com/wp-content/uploads/2020/10/Relations-and-Functions-1.png" alt="Relations" width="800">
 
 ### From Sets to Spaces
 - **Spaces**: A set becomes a space when operations are defined on it (e.g., vector spaces, groups, rings).
 - **Points in Spaces**: Data elements can be treated as points in mathematical spaces, enabling structured operations.
-
-![Diagram summarizing the transition from sets to structured spaces.](INSERT_IMAGE_LINK_HERE)
 
 ---
 
@@ -76,7 +74,7 @@ Data analysis can be broken into two key activities:
   - **Order Matters**: Most operations are not commutative.
   - **Overprocessing**: Applying excessive operations can distort insights.
 
-![Diagram of a simple data analysis pipeline.](INSERT_IMAGE_LINK_HERE)
+<img src="../../images/pipeline.png" alt="Pipeline" width="800">
 
 ---
 
