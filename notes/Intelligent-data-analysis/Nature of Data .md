@@ -12,7 +12,6 @@ Data representations, whether signals, images, videos, or text, are fundamentall
 - **Representation Matters**: While the format does not impose mathematical limitations, it impacts the convenience of data manipulation.
 
 
-
 ## 2. Data as Points in Space
 
 ### 2.1 Sets and Elements
@@ -57,7 +56,6 @@ Relations can be represented in various ways:
 - **Spaces**: A set becomes a space when operations are defined on it (e.g., vector spaces, groups, rings).
 - **Points in Spaces**: Data elements can be treated as points in mathematical spaces, enabling structured operations.
 
----
 
 ## 3. Fundamentals of Data Analysis
 
@@ -74,7 +72,7 @@ Data analysis can be broken into two key activities:
 
 <img src="../../images/pipeline.png" alt="Pipeline" width="800">
 
----
+
 
 ## 4. Properties of sets
 
@@ -86,6 +84,8 @@ Data analysis can be broken into two key activities:
 3. **Property**: A measurable characteristic, representing the relationship between a characteristic and its label.
 
 **Key Insight**: Properties are relations between the characteristics of a space and the assigned labels.
+
+---
 
 ### 4.2 Intrinsic and Extrinsic Properties
 #### 4.2.1 Intrinsic Properties
@@ -103,6 +103,8 @@ Extrinsic properties depend on the environment or context of the data. Examples 
 - **Continuity**: Reflects the presence or absence of gaps in the data.
 - **Separability**: Related to countability and whether elements in a space can be distinctly identified.
 
+---
+
 ### 4.3 Measurement Systems and Scales
 #### 4.3.1 Components of Measurement Systems
 - **Type of Object**: The nature of the data being measured (e.g., qualitative or quantitative).
@@ -117,6 +119,8 @@ Measurement systems are characterized by the following properties:
 3. **Interval**: Labels represent consistent differences and are invariant to addition.
 4. **Ratio**: Incorporates an absolute zero point and labels are invariant to scaling.
 
+---
+
 ### 4.4 Measurement Scales and Their Operations
 Measurement systems are further classified into scales, which define the permissible operations:
 1. **Nominal Scale**: Categorization only (e.g., colors).
@@ -124,7 +128,7 @@ Measurement systems are further classified into scales, which define the permiss
 3. **Interval Scale**: Allows addition/subtraction but lacks a true zero (e.g., temperature in Celsius).
 4. **Ratio Scale**: Includes all arithmetic operations and an absolute zero (e.g., height, weight).
 
----
+
 
 ## 5. Variables and Descriptive Statistics
 
@@ -143,7 +147,7 @@ Measurement systems are further classified into scales, which define the permiss
 
 ![Graph of mean, median, and mode on a normal distribution.](INSERT_IMAGE_LINK_HERE)
 
----
+
 
 ## 6. Signals and Noise
 
