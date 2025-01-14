@@ -11,7 +11,6 @@ Data representations, whether signals, images, videos, or text, are fundamentall
 - **Human-Defined Semantics**: The meaning of data is assigned by humans, while the format primarily affects ease of manipulation, not mathematical properties.
 - **Representation Matters**: While the format does not impose mathematical limitations, it impacts the convenience of data manipulation.
 
----
 
 ## 2. Data as Points in Space
 
