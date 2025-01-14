@@ -8,7 +8,7 @@ Data representations like signals, images, videos, and text are fundamentally eq
 - **Human-Defined Semantics**: Meaning is assigned by humans; the format influences ease of manipulation but has no inherent mathematical limitations.
 
 
-![Various data formats](compsci-notes/images/nature_of_data.png)
+![Various data formats](../images/nature_of_data.png)
 
 ## 2. Data as Points in Space
 ### Sets and Relations
