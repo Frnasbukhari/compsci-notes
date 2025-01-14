@@ -1,5 +1,16 @@
 # Nature of Data: Introduction to Intelligent Data Analysis
 
+## Table of Contents
+1. [The Nature of Data](#the-nature-of-data)
+2. [From Data to Points in Space](#from-data-to-points-in-space)
+3. [What is Data Analysis?](#what-is-data-analysis)
+4. [Properties and Measurements](#properties-and-measurements)
+5. [From Data to Variables](#from-data-to-variables)
+   - [Descriptive Statistics](#descriptive-statistics)
+6. [From Variables to Signals](#from-variables-to-signals)
+   - [Statistical Signal Descriptors](#statistical-signal-descriptors)
+7. [Final Remarks](#final-remarks)
+
 ## 1. Understanding the Nature of Data
 Data representations like signals, images, videos, and text are fundamentally equivalent from a mathematical perspective. They are:
 - **Points in Space**: Regardless of format, all data can be treated as points in a structured set.
