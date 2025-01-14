@@ -8,7 +8,7 @@ Data representations, whether signals, images, videos, or text, are fundamentall
 - **Human-Defined Semantics**: The meaning of data is assigned by humans, while the format primarily affects ease of manipulation, not mathematical properties.
 - **Representation Matters**: While the format does not impose mathematical limitations, it impacts the convenience of data manipulation.
 
-<img src="../../images/nature_of_data.png" alt="Nature of Data" width="900">
+<img src="../../images/nature_of_data.png" alt="Nature of Data" width="800">
 ---
 
 ## 2. Data as Points in Space
@@ -32,8 +32,7 @@ Data can be understood and analyzed through fundamental mathematical constructs.
   - Multivariate data analysis often uses Cartesian products to combine dimensions into one.
   - Complex data structures like multimodal data fusion leverage Cartesian products at higher abstraction levels.
 
-![Visualization of Cartesian product combining two sets.]()
-<img src="https://i.ytimg.com/vi/l4j4XgVbuxc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCXsi22xXVMFFoLOtBnczKHoIYX2Q" alt="Cartesian" width="900">
+<img src="https://i.ytimg.com/vi/l4j4XgVbuxc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCXsi22xXVMFFoLOtBnczKHoIYX2Q" alt="Cartesian" width="800">
 ### Types of Relations
 Relations, as subsets of Cartesian products, can have specific constraints:
 1. **Functions**: Each element in the domain maps to at most one image (e.g., variables).
