@@ -9,6 +9,7 @@ Data representations, whether signals, images, videos, or text, are fundamentall
 - **Representation Matters**: While the format does not impose mathematical limitations, it impacts the convenience of data manipulation.
 
 <img src="../../images/nature_of_data.png" alt="Nature of Data" width="800">
+
 ---
 
 ## 2. Data as Points in Space
