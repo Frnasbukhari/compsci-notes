@@ -33,7 +33,7 @@ Data can be understood and analyzed through fundamental mathematical constructs.
   - Multivariate data analysis often uses Cartesian products to combine dimensions into one.
   - Complex data structures like multimodal data fusion leverage Cartesian products at higher abstraction levels.
 
-![Visualization of Cartesian product combining two sets.](https://cdn1.byjus.com/wp-content/uploads/2021/07/cartesian-products-of-sets.png)
+![Visualization of Cartesian product combining two sets.](https://i.ytimg.com/vi/l4j4XgVbuxc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCXsi22xXVMFFoLOtBnczKHoIYX2Q)
 
 ### Types of Relations
 Relations, as subsets of Cartesian products, can have specific constraints:
