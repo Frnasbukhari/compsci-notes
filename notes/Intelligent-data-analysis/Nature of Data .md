@@ -91,6 +91,9 @@ Relations can be visualized in multiple ways:
 - **Graph**: Nodes and edges depict relationships.
 - **Adjacency Matrix**: A table shows whether elements are related.
 - **Tuples**: Explicitly list related pairs.
+and more...
+
+<img src="https://cdn1.byjus.com/wp-content/uploads/2020/10/Relations-and-Functions-1.png" alt="Relations" width="800">
 
 These representations are key to data modeling in applications like social networks (graphs) or machine learning (feature matrices).
 
