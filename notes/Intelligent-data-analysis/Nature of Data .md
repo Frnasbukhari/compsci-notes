@@ -66,11 +66,11 @@ Relations are fundamental concepts in data analysis and mathematics, describing 
    <img src="https://cdn1.byjus.com/wp-content/uploads/2021/06/Functions-and-Types-of-Functions-01.png" alt="Function" width="400">
 
 2. **Orders**:
-   - **Definition**: A relation that is **reflexive, transitive, and anti-symmetric**, meaning:
+   - **Definition**: A relation that is **reflexive, transitive, and anti-symmetric**
    - **Application**: Orders are useful for sorting and ranking tasks, such as prioritizing items in a queue.
 
 3. **Equivalences**:
-   - **Definition**: A relation that is **reflexive, transitive, and symmetric**, meaning:
+   - **Definition**: A relation that is **reflexive, transitive, and symmetric**
    - **Application**: Equivalences are used to group data into **equivalence classes**, such as clustering items based on similarity.
 
 4. **Functors**:
