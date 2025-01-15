@@ -42,10 +42,10 @@ Relations, as subsets of Cartesian products, can have specific constraints:
 
 <img src="https://cdn1.byjus.com/wp-content/uploads/2021/06/Functions-and-Types-of-Functions-01.png" alt="Function" width="400">
 
-3. **Orders**: Relations that are reflexive, transitive, and anti-symmetric.
-4. **Equivalences**: Relations that are reflexive, transitive, and symmetric.
-5. **Functors**: Relations where domains are themselves functions.
-6. **Operations**: Relations applied to powers of a set.
+2. **Orders**: Relations that are reflexive, transitive, and anti-symmetric.
+3. **Equivalences**: Relations that are reflexive, transitive, and symmetric.
+4. **Functors**: Relations where domains are themselves functions.
+5. **Operations**: Relations applied to powers of a set.
 
 ### 2.5 Representations of Relations
 Relations can be represented in various ways:
