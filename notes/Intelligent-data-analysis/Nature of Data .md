@@ -44,7 +44,7 @@ Manipulating sets allows us to extract relationships and insights:
 The Cartesian product combines sets into a single set of ordered pairs (or tuples):
 - **Definition**: If \( A = \{1, 2\} \) and \( B = \{x, y\} \), then:
   \[
-  A \times B = \{(1, x), (1, y), (2, x), (2, y)\}
+  A x B = \{(1, x), (1, y), (2, x), (2, y)\}
   \]
 - **Application**:
   - In multivariate data, a Cartesian product helps represent combinations of variables like height and weight.
