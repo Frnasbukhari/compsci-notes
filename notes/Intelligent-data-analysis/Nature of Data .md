@@ -39,7 +39,7 @@ Data representations, whether signals, images, videos, or text, are fundamentall
 ### 2.4 Types of Relations
 Relations, as subsets of Cartesian products, can have specific constraints:
 1. **Functions**: Each element in the domain maps to at most one image (e.g., variables).
-2. 
+
 <img src="https://cdn1.byjus.com/wp-content/uploads/2021/06/Functions-and-Types-of-Functions-01.png" alt="Function" width="400">
 
 3. **Orders**: Relations that are reflexive, transitive, and anti-symmetric.
