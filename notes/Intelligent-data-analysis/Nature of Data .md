@@ -161,6 +161,11 @@ Extrinsic properties depend on **context or environment**:
 - **Separability**: Whether you can distinguish groups in the data.
   - Example: Distinguishing cats and dogs in an image dataset depends on resolution and clarity.
 
+While extrinsic properties seem tied to the data, their realization or perception depends on external factors like:
+1. Measurement tools (e.g., sensor precision, noise levels).
+2. Sampling processes (e.g., gaps from missing observations).
+3. Context of analysis (e.g., resolution or algorithm choices).
+
 ---
 
 ## 5. Variables and Descriptive Statistics
