@@ -117,7 +117,6 @@ These representations are key to data modeling in applications like social netwo
    - Extracts summaries, patterns, or insights.
    - Example: Computing statistical metrics like averages or performing clustering.
 
----
 
 ### 3.2 Pipelines
 A **pipeline** combines processing and analysis steps in sequence:
