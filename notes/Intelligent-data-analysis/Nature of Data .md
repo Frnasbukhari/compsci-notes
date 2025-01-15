@@ -140,17 +140,26 @@ A **pipeline** combines processing and analysis steps in sequence:
 
 ### 4.2 Intrinsic and Extrinsic Properties
 
+
 #### 4.2.1 Intrinsic Properties
-Intrinsic properties are inherent and do not depend on external factors:
-- **Cardinality**: The number of elements in a set.
-- **Density**: Whether data is discrete or continuous.
-- **Dimensionality**: The number of features or axes needed to describe the data.
+Intrinsic properties are built-in features of the data, independent of external context:
+- **Cardinality**: How many elements are in a set.
+  - Example: A set of colors like \{red, blue, green\} has a cardinality of 3.
+- **Density**: Whether the data is discrete (individual points) or continuous (a smooth range).
+  - Example: Whole numbers are discrete; real numbers are continuous.
+- **Dimensionality**: The number of "axes" needed to describe the data.
+  - Example: A 2D space requires length and width, while a 3D space also includes height.
+- **Countability**: Whether you can list all elements in the set.
+  - Example: The set of integers is countable, but the set of real numbers is uncountable.
 
 #### 4.2.2 Extrinsic Properties
-Extrinsic properties depend on how the data interacts with the environment:
-- **Differentiability**: Smoothness of the data (e.g., a line vs. a jagged edge).
-- **Continuity**: Absence of gaps in the data.
-- **Separability**: Ability to distinguish groups or clusters.
+Extrinsic properties depend on **context or environment**:
+- **Differentiability**: Whether the data changes smoothly.
+  - Example: A curve is differentiable if it has no sharp edges.
+- **Continuity**: Whether the data has gaps.
+  - Example: A line with missing sections is not continuous.
+- **Separability**: Whether you can distinguish groups in the data.
+  - Example: Distinguishing cats and dogs in an image dataset depends on resolution and clarity.
 
 ---
 
