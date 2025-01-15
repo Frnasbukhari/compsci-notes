@@ -168,6 +168,26 @@ While extrinsic properties seem tied to the data, their realization or perceptio
 
 ---
 
+### 4.3 Measurement Systems and Scales
+
+#### 4.3.1 Components of Measurement
+1. **Type**: Qualitative (e.g., categories) or quantitative (e.g., numbers).
+2. **Unit**: A standard for comparison (e.g., kilograms for weight).
+3. **Magnitude**: The specific value (e.g., 5 kg).
+4. **Uncertainty**: Variability or error in measurement.
+
+---
+
+#### 4.3.2 Measurement Scales
+Scales define what operations can be performed:
+1. **Nominal**: Categorical (e.g., colors, names).
+2. **Ordinal**: Ordered categories (e.g., rankings like "small, medium, large").
+3. **Interval**: Numeric, but no true zero (e.g., temperature in Celsius).
+4. **Ratio**: Numeric with a true zero (e.g., weight in kilograms).
+
+---
+
+
 ## 5. Variables and Descriptive Statistics
 
 ### 5.1 Variables
@@ -214,8 +234,3 @@ Example: For the data \([1, 2, 2, 3, 4]\):
 1. **White Noise**: Random with equal intensity across frequencies.
 2. **Pink Noise**: More power at lower frequencies.
 3. **Gaussian Noise**: Follows a normal distribution.
-
----
-
-### Summary
-This expanded version preserves technical terms while providing clearer examples and additional context for every concept. Let me know if you'd like further refinements!
