@@ -168,9 +168,9 @@ While extrinsic properties seem tied to the data, their realization or perceptio
 
 ---
 
-### 4.3 Measurement Systems and Scales
+### 4.3 Measurement Systems
 
-#### 4.3.1 Components of Measurement
+#### 4.3.1 Labels themselves are characterised by:
 1. **Type**: Qualitative (e.g., categories) or quantitative (e.g., numbers).
 2. **Unit**: A standard for comparison (e.g., kilograms for weight).
 3. **Magnitude**: The specific value (e.g., 5 kg).
@@ -178,8 +178,7 @@ While extrinsic properties seem tied to the data, their realization or perceptio
 
 ---
 
-#### 4.3.2 Measurement Scales
-Scales define what operations can be performed:
+#### 4.3.2 Properties of the measurement system
 1. **Nominal**: Categorical (e.g., colors, names).
 2. **Ordinal**: Ordered categories (e.g., rankings like "small, medium, large").
 3. **Interval**: Numeric, but no true zero (e.g., temperature in Celsius).
