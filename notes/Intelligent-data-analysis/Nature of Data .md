@@ -197,7 +197,8 @@ A variable can be represented as a function:
 - **Notation**: $f : X \to Y$, where:
   - $X$: Domain (set of inputs).
   - $Y$: Range (set of outputs).
-  - $y = f(x) + \epsilon$: The output $y$ is determined by the input $x$, with $\epsilon$ representing uncertainty.
+  - $y = f(x) + \epsilon$:
+  - The output $y$ is determined by the input $x$, with $\epsilon$ representing uncertainty.
 
 #### Types of Functions
 1. **Deterministic Function**:
