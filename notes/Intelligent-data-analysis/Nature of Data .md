@@ -218,6 +218,79 @@ A **random variable** maps elements from a sample space $S$ to a range $T$, with
 
 ---
 
+# Key Concepts: Variables as Functions and Their Relation to Probabilistic Events
+
+## Variables as Functions
+
+- **Function Notation**:
+  - A variable can be described as a function:  
+    `f : X -> Y,   y = f(x) + ε`
+    - **Domain (X)**: The set of inputs.
+    - **Range (Y)**: The set of outputs.
+    - **Uncertainty (ε)**: Captures the variability or randomness in the association.
+
+### Types of Functions
+1. **Deterministic Function**:
+   - No uncertainty (`ε = 0`).
+   - Example: `y = 2x`, where each input `x` has a precise, predictable output.
+
+2. **Random Function**:
+   - Includes uncertainty (`ε != 0`).
+   - Example: `y = x^2 + ε`, where the output varies due to randomness.
+
+---
+
+## Random Variables and Their Relationship to Probabilistic Events
+
+- A **random variable** is a function that maps elements from a **sample space** (`S`) to a range (`T`):  
+  `X : S -> T`
+  - Example: A coin toss has a sample space `S = {Heads, Tails}`, and a random variable `X` assigns labels like "Heads" or "Tails."
+
+### Observing Random Variables
+- When a statistical experiment is performed, an outcome `s` in `S` occurs, and the random variable outputs `X(s)` with some uncertainty:  
+  `X(s) + ε`
+
+---
+
+## Frequency Tables and Distributions
+
+### Frequency Table
+- A **frequency table** enumerates the number of times each outcome occurs in a dataset.
+  - Example format:
+
+    | Value/Interval | # Observations |
+    |----------------|----------------|
+    | {}            | 0              |
+    | {x}           | 4              |
+    | {y}           | 1              |
+
+### Frequency Distribution
+- A **frequency distribution** adds probabilities to the frequency table by normalizing the counts:
+  `P(X = x) = (# Observations for x) / (Total Observations)`
+
+  - Example format:
+
+    | Value/Interval | # Observations | Probability |
+    |----------------|----------------|-------------|
+    | {}            | 0              | 0/10        |
+    | {x}           | 4              | 4/10        |
+    | {y}           | 1              | 1/10        |
+
+### Histograms
+- A **histogram** visually represents the frequency table or distribution using a bar plot:
+  - X-axis: Observation values.
+  - Y-axis: Frequency or probability.
+
+---
+
+## From Events to Probabilities
+
+- Probabilities quantify the likelihood of each event occurring:
+  `P(X = x) ∈ [0, 1]`
+- This connects random variables to statistical events, enabling the study of patterns and relationships in data.
+
+---
+
 ### 5.2 Descriptive Statistics
 Descriptive statistics summarize data to provide insight into its key properties. They are divided into measures of **central tendency** and **dispersion**.
 
