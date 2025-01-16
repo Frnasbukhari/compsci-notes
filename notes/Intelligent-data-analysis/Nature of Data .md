@@ -193,25 +193,27 @@ Data can be analyzed using **variables**, which define functional relationships 
 
 #### Variables as Functions
 A variable can be represented as a function:
-- **Notation**: \( f : X \to Y \), where:
-  - \( X \): Domain (set of inputs).
-  - \( Y \): Range (set of outputs).
-  - \( y = f(x) + \epsilon \): The output \( y \) is determined by the input \( x \), with \( \epsilon \) representing uncertainty.
+
+- **Notation**: $f : X \to Y$, where:
+  - $X$: Domain (set of inputs).
+  - $Y$: Range (set of outputs).
+  - $y = f(x) + \epsilon$: The output $y$ is determined by the input $x$, with $\epsilon$ representing uncertainty.
 
 #### Types of Functions
 1. **Deterministic Function**:
-   - No uncertainty (\( \epsilon = 0 \)).
-   - Example: \( y = 2x \), where every input \( x \) has a precise and predictable output.
+   - No uncertainty ($\epsilon = 0$).
+   - Example: $y = 2x$, where every input $x$ has a precise and predictable output.
 2. **Random Function**:
-   - Includes uncertainty (\( \epsilon \neq 0 \)).
-   - Example: \( y = x^2 + \epsilon \), where the output varies due to random noise.
+   - Includes uncertainty ($\epsilon \neq 0$).
+   - Example: $y = x^2 + \epsilon$, where the output varies due to random noise.
 
 ---
 
 #### Random Variables
-A **random variable** maps elements from a sample space \( S \) to a range \( T \), with associated uncertainty:
-- **Notation**: \( X : S \to T \)
-- Example: For a coin toss, the sample space \( S = \{\text{Heads, Tails}\} \), and the random variable maps these outcomes to numeric labels (e.g., Heads = 1, Tails = 0).
+A **random variable** maps elements from a sample space $S$ to a range $T$, with associated uncertainty:
+
+- **Notation**: $X : S \to T$
+- Example: For a coin toss, the sample space $S = \{\text{Heads}, \text{Tails}\}$, and the random variable maps these outcomes to numeric labels (e.g., Heads = 1, Tails = 0).
 
 ---
 
@@ -220,22 +222,24 @@ Descriptive statistics summarize data to provide insight into its key properties
 
 #### Central Tendency
 Central tendency metrics describe the "center" or typical value of a dataset:
+
 1. **Mean**: The arithmetic average.
-   - Formula: \( \text{Mean} = \frac{\sum x_i}{n} \)
-   - Example: For the dataset \([2, 4, 6]\), \( \text{Mean} = \frac{2 + 4 + 6}{3} = 4 \).
+   - Formula: $\text{Mean} = \frac{\sum x_i}{n}$
+   - Example: For the dataset $[2, 4, 6]$, $\text{Mean} = \frac{2 + 4 + 6}{3} = 4$.
 2. **Median**: The middle value when sorted.
-   - Example: For \([1, 3, 5]\), \( \text{Median} = 3 \).
+   - Example: For $[1, 3, 5]$, $\text{Median} = 3$.
 3. **Mode**: The most frequently occurring value.
-   - Example: For \([1, 2, 2, 3]\), \( \text{Mode} = 2 \).
+   - Example: For $[1, 2, 2, 3]$, $\text{Mode} = 2$.
 
 ---
 
 #### Dispersion
 Dispersion metrics describe how spread out the data is:
+
 1. **Range**: The difference between the maximum and minimum values.
-   - Example: For \([1, 4, 9]\), \( \text{Range} = 9 - 1 = 8 \).
+   - Example: For $[1, 4, 9]$, $\text{Range} = 9 - 1 = 8$.
 2. **Variance**: Measures the average squared deviation from the mean.
-   - Formula: \( \text{Variance} = \frac{\sum (x_i - \mu)^2}{n} \)
+   - Formula: $\text{Variance} = \frac{\sum (x_i - \mu)^2}{n}$
 3. **Standard Deviation (SD)**: The square root of the variance.
    - Indicates how much data typically deviates from the mean.
 
@@ -244,12 +248,12 @@ Dispersion metrics describe how spread out the data is:
 ### Types of Variables
 Variables are classified based on their properties, influencing what types of descriptive statistics are valid:
 
-| Variable Type       | Description                              | Examples                       | Valid Statistics                  |
-|---------------------|------------------------------------------|--------------------------------|-----------------------------------|
-| **Nominal**         | Categories without order                | Colors (red, blue, green)      | Frequency, Mode                  |
-| **Ordinal**         | Ordered categories                      | Ranks (gold, silver, bronze)   | Median, Range                    |
-| **Interval**        | Quantitative, no true zero              | Temperature (°C, °F)           | Mean, Median, Standard Deviation |
-| **Ratio**           | Quantitative, true zero exists          | Weight, height                 | All descriptive statistics       |
+| Variable Type | Description                      | Examples                    | Valid Statistics                  |
+|---------------|----------------------------------|----------------------------|-----------------------------------|
+| **Nominal**   | Categories without order         | Colors (red, blue, green)  | Frequency, Mode                   |
+| **Ordinal**   | Ordered categories              | Ranks (gold, silver, bronze) | Median, Range                    |
+| **Interval**  | Quantitative, no true zero       | Temperature (°C, °F)       | Mean, Median, Standard Deviation  |
+| **Ratio**     | Quantitative, true zero exists   | Weight, height             | All descriptive statistics        |
 
 ---
 
@@ -259,9 +263,9 @@ Variables are classified based on their properties, influencing what types of de
 When the location (loci) of observations matters, we treat data as **signals**. A signal is a structured relationship between observations and their positions in a lattice.
 
 #### Definition of a Signal
-A **signal** is a set of observations (\( Y \)) collected over a lattice (\( X, \preceq \)), where:
-- \( X \): Represents positions (e.g., time or space).
-- \( \preceq \): Defines a partial order (topology) over these positions.
+A **signal** is a set of observations ($Y$) collected over a lattice ($X, \preceq$), where:
+- $X$: Represents positions (e.g., time or space).
+- $\preceq$: Defines a partial order (topology) over these positions.
 
 #### Examples of Signals
 1. **1D Signals**: Amplitude of sound over time (e.g., audio waveform).
@@ -294,7 +298,7 @@ Noise refers to unwanted variation or random disturbances within a signal.
    - **Gaussian Noise**: Follows a normal distribution, common in measurement errors.
    - **Poisson Noise**: Associated with count data and low-light imaging.
 3. **Algorithmic Noise**:
-   - **Brownian Noise**: Random walk behavior.
+   - **Brownian Noise**: Random-walk behavior.
    - **Fractal Noise**: Self-similar patterns over scales.
 
 ---
@@ -304,16 +308,16 @@ Noise is quantified using metrics that compare its impact on the signal.
 
 1. **Signal-to-Noise Ratio (SNR)**:
    - Measures the strength of the signal relative to noise.
-   - Formula:
-     \[
+   - Formula: 
+     $$
      \text{SNR} = \frac{P_{\text{signal}}}{P_{\text{noise}}}
-     \]
+     $$
    - Example: High SNR means the signal is clear, while low SNR indicates significant noise.
 
 2. **Coefficient of Variation (CV)**:
    - Measures relative variability of the signal.
    - Formula:
-     \[
+     $$
      \text{CV} = \frac{\sigma_x}{\mu_x}
-     \]
+     $$
    - Useful for comparing variability across datasets with different units or scales.
