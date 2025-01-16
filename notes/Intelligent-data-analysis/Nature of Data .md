@@ -214,7 +214,7 @@ A variable can be represented as a function:
 A **random variable** maps elements from a sample space $S$ to a range $T$, with associated uncertainty:
 
 - **Notation**: $X : S \to T$
-- Example: For a coin toss, the sample space $S = \{\text{Heads}, \text{Tails}\}$, and the random variable maps these outcomes to numeric labels (e.g., Heads = 1, Tails = 0).
+- Example: For a coin toss, the sample space $S = \{\text{Heads}, \text{ Tails}\}$, and the random variable maps these outcomes to numeric labels (e.g., Heads = 1, Tails = 0).
 
 ---
 
