@@ -309,15 +309,15 @@ Noise is quantified using metrics that compare its impact on the signal.
 1. **Signal-to-Noise Ratio (SNR)**:
    - Measures the strength of the signal relative to noise.
    - Formula: 
-     $$
+     $
      \text{SNR} = \frac{P_{\text{signal}}}{P_{\text{noise}}}
-     $$
+     $
    - Example: High SNR means the signal is clear, while low SNR indicates significant noise.
 
 2. **Coefficient of Variation (CV)**:
    - Measures relative variability of the signal.
    - Formula:
-     $$
+     $
      \text{CV} = \frac{\sigma_x}{\mu_x}
-     $$
+     $
    - Useful for comparing variability across datasets with different units or scales.
