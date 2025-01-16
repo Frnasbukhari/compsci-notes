@@ -21,6 +21,7 @@ Data comes in many forms—signals, images, videos, text, etc.—but from a math
 
 ### 2.1 Sets and Elements
 A **set** is a collection of distinct objects, called elements. Sets are fundamental because they form the basis for organizing data:
+
 - **Finite Sets**: Contain a limited number of elements (e.g., a set of colors: `{red, green, blue}`).
 - **Infinite Sets**: Contain an unlimited number of elements (e.g., the set of all integers).
 
@@ -42,10 +43,13 @@ Manipulating sets allows us to extract relationships and insights:
 
 ### 2.3 Cartesian Product
 The Cartesian product combines sets into a single set of ordered pairs (or tuples):
-- **Definition**: If \( A = \{1, 2\} \) and \( B = \{x, y\} \), then:
-  \[
-  A x B = \{(1, x), (1, y), (2, x), (2, y)\}
-  \]
+
+```
+A = {1, 2}, B = {x, y}
+
+A x B = {(1, x), (1, y), (2, x), (2, y)}
+```
+
 - **Application**:
   - In multivariate data, a Cartesian product helps represent combinations of variables like height and weight.
   - In machine learning, feature spaces are often Cartesian products of multiple input dimensions.
@@ -60,17 +64,17 @@ Relations are fundamental concepts in data analysis and mathematics, describing 
 
 1. **Functions**:
    - **Definition**: A relation where each input (element from the domain) maps to **at most one output** (element from the range).
-   - **Example**: \( f(x) = x^2 \), where every input \( x \) has exactly one output \( x^2 \).
+   - **Example**: `f(x) = x^2`, where every input `x` has exactly one output `x^2`.
    - **Application**: Functions are used in modeling relationships between variables, such as predicting house prices based on square footage.
 
    <img src="https://cdn1.byjus.com/wp-content/uploads/2021/06/Functions-and-Types-of-Functions-01.png" alt="Function" width="400">
 
 2. **Orders**:
-   - **Definition**: A relation that is **reflexive, transitive, and anti-symmetric**
+   - **Definition**: A relation that is **reflexive, transitive, and anti-symmetric**.
    - **Application**: Orders are useful for sorting and ranking tasks, such as prioritizing items in a queue.
 
 3. **Equivalences**:
-   - **Definition**: A relation that is **reflexive, transitive, and symmetric**
+   - **Definition**: A relation that is **reflexive, transitive, and symmetric**.
    - **Application**: Equivalences are used to group data into **equivalence classes**, such as clustering items based on similarity.
 
 4. **Functors**:
@@ -80,9 +84,8 @@ Relations are fundamental concepts in data analysis and mathematics, describing 
 
 5. **Operations**:
    - **Definition**: A relation applied to powers of a set, often combining multiple elements into one.
-   - **Example**: Addition (\( + \)) is an operation on the set of numbers, combining two numbers to produce a third (\( a + b = c \)).
+   - **Example**: Addition (`+`) is an operation on the set of numbers, combining two numbers to produce a third (`a + b = c`).
    - **Application**: Operations form the foundation of algebraic structures like groups, rings, and fields, enabling arithmetic and matrix computations.
-
 
 ---
 
@@ -91,9 +94,6 @@ Relations can be visualized in multiple ways:
 - **Graph**: Nodes and edges depict relationships.
 - **Adjacency Matrix**: A table shows whether elements are related.
 - **Tuples**: Explicitly list related pairs.
-and more...
-
-<img src="https://cdn1.byjus.com/wp-content/uploads/2020/10/Relations-and-Functions-1.png" alt="Relations" width="800">
 
 These representations are key to data modeling in applications like social networks (graphs) or machine learning (feature matrices).
 
@@ -113,10 +113,10 @@ These representations are key to data modeling in applications like social netwo
 1. **Processing**:
    - Enhances or cleans data before analysis.
    - Example: Noise removal in a video or filtering missing values in a dataset.
+
 2. **Analysis**:
    - Extracts summaries, patterns, or insights.
    - Example: Computing statistical metrics like averages or performing clustering.
-
 
 ### 3.2 Pipelines
 A **pipeline** combines processing and analysis steps in sequence:
@@ -140,11 +140,10 @@ A **pipeline** combines processing and analysis steps in sequence:
 
 ### 4.2 Intrinsic and Extrinsic Properties
 
-
 #### 4.2.1 Intrinsic Properties
 Intrinsic properties are built-in features of the data, independent of external context:
 - **Cardinality**: How many elements are in a set.
-  - Example: A set of colors like \{red, blue, green\} has a cardinality of 3.
+  - Example: A set of colors like `{red, blue, green}` has a cardinality of 3.
 - **Density**: Whether the data is discrete (individual points) or continuous (a smooth range).
   - Example: Whole numbers are discrete; real numbers are continuous.
 - **Dimensionality**: The number of "axes" needed to describe the data.
@@ -155,34 +154,31 @@ Intrinsic properties are built-in features of the data, independent of external 
 #### 4.2.2 Extrinsic Properties
 Extrinsic properties depend on **context or environment**:
 - **Differentiability**: Whether the data changes smoothly.
-  - Example: A curve is differentiable if it has no sharp edges.
 - **Continuity**: Whether the data has gaps.
-  - Example: A line with missing sections is not continuous.
 - **Separability**: Whether you can distinguish groups in the data.
-  - Example: Distinguishing cats and dogs in an image dataset depends on resolution and clarity.
 
-While extrinsic properties seem tied to the data, their realization or perception depends on external factors like:
-1. Measurement tools (e.g., sensor precision, noise levels).
-2. Sampling processes (e.g., gaps from missing observations).
+While extrinsic properties seem tied to the data, their realization depends on external factors like:
+1. Measurement tools (e.g., sensor precision, noise).
+2. Sampling processes (e.g., missing observations).
 3. Context of analysis (e.g., resolution or algorithm choices).
 
 ---
 
 ### 4.3 Measurement Systems
 
-#### 4.3.1 Labels themselves are characterised by:
+#### 4.3.1 Labels themselves are characterised by
 1. **Type**: Qualitative (e.g., categories) or quantitative (e.g., numbers).
-2. **Unit**: A standard for comparison (e.g., kilograms for weight).
+2. **Unit**: A standard for comparison (e.g., kilograms).
 3. **Magnitude**: The specific value (e.g., 5 kg).
 4. **Uncertainty**: Variability or error in measurement.
 
 ---
 
-#### 4.3.2 Properties of the measurement system
+#### 4.3.2 Properties of the Measurement System
 1. **Nominal**: Categorical (e.g., colors, names).
-2. **Ordinal**: Ordered categories (e.g., rankings like "small, medium, large").
-3. **Interval**: Numeric, but no true zero (e.g., temperature in Celsius).
-4. **Ratio**: Numeric with a true zero (e.g., weight in kilograms).
+2. **Ordinal**: Ordered categories (e.g., "small, medium, large").
+3. **Interval**: Numeric, but no true zero (e.g., Celsius).
+4. **Ratio**: Numeric with a true zero (e.g., kilograms).
 
 ---
 
@@ -194,48 +190,59 @@ Data can be analyzed using **variables**, which define functional relationships 
 #### Variables as Functions
 A variable can be represented as a function:
 
-- **Notation**: $f : X \to Y$, where:
-  - $X$: Domain (set of inputs).
-  - $Y$: Range (set of outputs).
-  - $y = f(x) + \epsilon$:
-  - The output $y$ is determined by the input $x$, with $\epsilon$ representing uncertainty.
+```text
+f : X -> Y
+y = f(x) + ε
+```
+
+- **Domain (X)**: The set of inputs.  
+- **Range (Y)**: The set of outputs.  
+- **Uncertainty (ε)**: Represents random noise or variability in the mapping.
 
 #### Types of Functions
-1. **Deterministic Function**:
-   - No uncertainty ($\epsilon = 0$).
-   - Example: $y = 2x$, where every input $x$ has a precise and predictable output.
-2. **Random Function**:
-   - Includes uncertainty ($\epsilon \neq 0$).
-   - Example: $y = x^2 + \epsilon$, where the output varies due to random noise.
+
+1. **Deterministic Function**  
+   - No uncertainty (`ε = 0`).
+
+   ```text
+   y = 2x
+   ```
+
+   Every input `x` has a precise and predictable output.
+
+2. **Random Function**  
+   - Includes uncertainty (`ε != 0`).
+
+   ```text
+   y = x^2 + ε
+   ```
+
+   The output varies due to random noise.
 
 ---
 
 #### Random Variables
-A **random variable** maps elements from a sample space $S$ to a range $T$, with associated uncertainty:
 
-- **Notation**: $X : S \to T$
-- Example: For a coin toss, the sample space $S = \{\text{Heads}, \text{ Tails}\}$, and the random variable maps these outcomes to numeric labels (e.g., Heads = 1, Tails = 0).
+- A **random variable** is a function that maps elements from a **sample space** (`S`) to a range (`T`):
 
----
+  ```text
+  X : S -> T
+  ```
 
-### 5.3 Variables as Functions
-
-
-## Random Variables and Their Relationship to Probabilistic Events
-
-- A **random variable** is a function that maps elements from a **sample space** (`S`) to a range (`T`):  
-  `X : S -> T`
-  - Example: A coin toss has a sample space `S = {Heads, Tails}`, and a random variable `X` assigns labels like "Heads" or "Tails."
+  Example: A coin toss has a sample space `S = {Heads, Tails}`, and a random variable `X` assigns labels like "Heads" or "Tails."
 
 ### Observing Random Variables
-- When a statistical experiment is performed, an outcome `s` in `S` occurs, and the random variable outputs `X(s)` with some uncertainty:  
-  `X(s) + ε`
+When a statistical experiment is performed, an outcome `s` in `S` occurs, and the random variable outputs:
+
+```text
+X(s) + ε
+```
 
 ---
 
-## Frequency Tables and Distributions
+### 5.2 Frequency Tables and Distributions
 
-### Frequency Table
+#### Frequency Table
 - A **frequency table** enumerates the number of times each outcome occurs in a dataset.
   - Example format:
 
@@ -245,9 +252,12 @@ A **random variable** maps elements from a sample space $S$ to a range $T$, with
     | {x}           | 4              |
     | {y}           | 1              |
 
-### Frequency Distribution
+#### Frequency Distribution
 - A **frequency distribution** adds probabilities to the frequency table by normalizing the counts:
-  `P(X = x) = (# Observations for x) / (Total Observations)`
+
+  ```text
+  P(X = x) = (# Observations for x) / (Total Observations)
+  ```
 
   - Example format:
 
@@ -257,17 +267,25 @@ A **random variable** maps elements from a sample space $S$ to a range $T$, with
     | {x}           | 4              | 4/10        |
     | {y}           | 1              | 1/10        |
 
-### Histograms
+#### Histograms
+
+<img src="https://wac-cdn.atlassian.com/dam/jcr:c33cf899-4437-43a7-a5c9-13c188167da0/histogram-example-1.png?cdnVersion=2497" alt="Histogram" width="400">
+
 - A **histogram** visually represents the frequency table or distribution using a bar plot:
   - X-axis: Observation values.
   - Y-axis: Frequency or probability.
 
+
 ---
 
-## From Events to Probabilities
+### From Events to Probabilities
 
 - Probabilities quantify the likelihood of each event occurring:
-  `P(X = x) ∈ [0, 1]`
+
+  ```text
+  P(X = x) ∈ [0, 1]
+  ```
+
 - This connects random variables to statistical events, enabling the study of patterns and relationships in data.
 
 ---
@@ -279,24 +297,35 @@ Descriptive statistics summarize data to provide insight into its key properties
 Central tendency metrics describe the "center" or typical value of a dataset:
 
 1. **Mean**: The arithmetic average.
-   - Formula: $\text{Mean} = \frac{\sum x_i}{n}$
-   - Example: For the dataset $[2, 4, 6]$, $\text{Mean} = \frac{2 + 4 + 6}{3} = 4$.
-2. **Median**: The middle value when sorted.
-   - Example: For $[1, 3, 5]$, $\text{Median} = 3$.
-3. **Mode**: The most frequently occurring value.
-   - Example: For $[1, 2, 2, 3]$, $\text{Mode} = 2$.
+
+    ```text
+    Mean = (Σ xᵢ) / n
+    ```
+
+   Example: For `[2, 4, 6]`, the mean is `(2+4+6)/3 = 4`.
+
+2. **Median**: The middle value when sorted.  
+   Example: For `[1, 3, 5]`, median is `3`.
+
+3. **Mode**: The most frequently occurring value.  
+   Example: For `[1, 2, 2, 3]`, mode is `2`.
 
 ---
 
 #### Dispersion
 Dispersion metrics describe how spread out the data is:
 
-1. **Range**: The difference between the maximum and minimum values.
-   - Example: For $[1, 4, 9]$, $\text{Range} = 9 - 1 = 8$.
-2. **Variance**: Measures the average squared deviation from the mean.
-   - Formula: $\text{Variance} = \frac{\sum (x_i - \mu)^2}{n}$
-3. **Standard Deviation (SD)**: The square root of the variance.
-   - Indicates how much data typically deviates from the mean.
+1. **Range**: The difference between the maximum and minimum values.  
+   Example: `[1, 4, 9]` → range is `9 - 1 = 8`.
+
+2. **Variance**: The average squared deviation from the mean.
+
+    ```text
+    Variance = [Σ (xᵢ - μ)²] / n
+    ```
+
+3. **Standard Deviation (SD)**: The square root of the variance.  
+   Indicates how much data typically deviates from the mean.
 
 ---
 
@@ -314,13 +343,17 @@ Variables are classified based on their properties, influencing what types of de
 
 ## 6. Signals and Noise
 
+
+<img src="https://github.com/user-attachments/assets/f6e0049a-7f33-4046-b09b-bfd665382240" alt="signal" width="800">
+
+
 ### 6.1 From Variables to Signals
 When the location (loci) of observations matters, we treat data as **signals**. A signal is a structured relationship between observations and their positions in a lattice.
 
 #### Definition of a Signal
-A **signal** is a set of observations ($Y$) collected over a lattice ($X, \preceq$), where:
-- $X$: Represents positions (e.g., time or space).
-- $\preceq$: Defines a partial order (topology) over these positions.
+A **signal** is a set of observations (`Y`) collected over a lattice (`X, ≺`), where:
+- `X`: Represents positions (e.g., time or space).
+- `≺`: Defines a partial order (topology) over these positions.
 
 #### Examples of Signals
 1. **1D Signals**: Amplitude of sound over time (e.g., audio waveform).
@@ -332,26 +365,44 @@ A **signal** is a set of observations ($Y$) collected over a lattice ($X, \prece
 ### 6.2 Statistical Signal Descriptors
 Statistical descriptors characterize signals based on their range of values. These include:
 
-1. **Mean**: Represents the central value of the signal.
-   - Caution: In nonstationary signals (e.g., trends), the mean may not be meaningful.
-2. **Standard Deviation (SD)**: Describes the signal's variability around its mean.
-   - Example: A sine wave has a consistent standard deviation, even with periodic oscillations.
-3. **Histogram**: Shows the frequency distribution of signal values.
-   - Example: For a grayscale image, a histogram shows the number of pixels for each intensity level.
+1. **Mean**: Represents the central value of the signal.  
+   *Caution:* In nonstationary signals (like trends), the mean may not be meaningful.
+
+2. **Standard Deviation (SD)**: Describes the signal's variability around its mean.  
+   Example: A sine wave has a consistent SD, even if it oscillates periodically.
+
+3. **Histogram**: Shows the frequency distribution of signal values.  
+   Example: For a grayscale image, a histogram shows how many pixels appear at each intensity level.
 
 ---
-
 ### 6.3 Noise in Signals
-Noise refers to unwanted variation or random disturbances within a signal.
+
+<img src="https://terpconnect.umd.edu/~toh/spectrum/noisetest.png" alt="signal" width="400">
+
+
+A common way to express a signal is:
+```text
+x(t) = f(t) + ε(t)
+```
+where
+- `f(t)` captures the *deterministic* or *systematic* behavior of the signal, and
+- `ε(t)` is the **innovation term** (often called *noise*).
+
+#### Deterministic vs. Stochastic Views
+- In a **deterministic** view, the central tendency (e.g., the mean) is considered the “signal,” and the variability or dispersion (e.g., variance, standard deviation) is deemed “noise.”
+- This assumption is **not universal**. For inherently stochastic systems, not all “innovation” is purely unwanted disturbance. Some of it may be part of the underlying process itself.
+- **Ultimately, the data analyst decides** what portion of `x(t)` is treated as “signal” and what is treated as “noise” based on context, goals, and domain knowledge.
 
 #### Types of Noise
 1. **Coloured Noise**:
    - **White Noise**: Equal power across all frequencies (e.g., static on a radio).
    - **Pink Noise**: More power at lower frequencies, common in natural systems.
-   - **Red Noise (Brownian Noise)**: Strong low-frequency components, resembling random walks.
+   - **Red Noise (Brownian Noise)**: Strong low-frequency components; resembles random walks.
+
 2. **Distribution-Based Noise**:
-   - **Gaussian Noise**: Follows a normal distribution, common in measurement errors.
+   - **Gaussian Noise**: Follows a normal distribution; common in measurement errors.
    - **Poisson Noise**: Associated with count data and low-light imaging.
+
 3. **Algorithmic Noise**:
    - **Brownian Noise**: Random-walk behavior.
    - **Fractal Noise**: Self-similar patterns over scales.
@@ -359,16 +410,21 @@ Noise refers to unwanted variation or random disturbances within a signal.
 ---
 
 ### 6.4 Quantifying Noise
-Noise is quantified using metrics that compare its impact on the signal.
+
+Noise is often measured by how much it obscures or disrupts the underlying signal. Two common ways to quantify noise are:
 
 1. **Signal-to-Noise Ratio (SNR)**:
-   - Measures the strength of the signal relative to noise.
-   - Formula: 
-     $\text{SNR} = \frac{P_{\text{signal}}}{P_{\text{noise}}}$
-   - Example: High SNR means the signal is clear, while low SNR indicates significant noise.
+   ```text
+   SNR = P(signal) / P(noise)
+   ```
+   - **High SNR** ⇒ The signal is comparatively strong and clear.
+   - **Low SNR** ⇒ The noise is significant relative to the signal.
 
 2. **Coefficient of Variation (CV)**:
-   - Measures relative variability of the signal.
-   - Formula:
-     $\text{CV} = \frac{\sigma_x}{\mu_x}$
+   ```text
+   CV = σ_x / μ_x
+   ```
+   - Compares the **standard deviation** (σ) of a dataset to its **mean** (μ).
    - Useful for comparing variability across datasets with different units or scales.
+
+By adjusting how we define “signal” vs. “noise” (`f(t)` vs. `ε(t)`), we directly influence these metrics and thus our interpretation of any given phenomenon.
