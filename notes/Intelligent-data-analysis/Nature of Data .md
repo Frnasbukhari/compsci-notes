@@ -218,27 +218,8 @@ A **random variable** maps elements from a sample space $S$ to a range $T$, with
 
 ---
 
-# Key Concepts: Variables as Functions and Their Relation to Probabilistic Events
+### 5.3 Variables as Functions
 
-## Variables as Functions
-
-- **Function Notation**:
-  - A variable can be described as a function:  
-    `f : X -> Y,   y = f(x) + ε`
-    - **Domain (X)**: The set of inputs.
-    - **Range (Y)**: The set of outputs.
-    - **Uncertainty (ε)**: Captures the variability or randomness in the association.
-
-### Types of Functions
-1. **Deterministic Function**:
-   - No uncertainty (`ε = 0`).
-   - Example: `y = 2x`, where each input `x` has a precise, predictable output.
-
-2. **Random Function**:
-   - Includes uncertainty (`ε != 0`).
-   - Example: `y = x^2 + ε`, where the output varies due to randomness.
-
----
 
 ## Random Variables and Their Relationship to Probabilistic Events
 
@@ -291,7 +272,7 @@ A **random variable** maps elements from a sample space $S$ to a range $T$, with
 
 ---
 
-### 5.2 Descriptive Statistics
+### 5.3 Descriptive Statistics
 Descriptive statistics summarize data to provide insight into its key properties. They are divided into measures of **central tendency** and **dispersion**.
 
 #### Central Tendency
