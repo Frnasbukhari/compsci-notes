@@ -185,132 +185,135 @@ While extrinsic properties seem tied to the data, their realization or perceptio
 4. **Ratio**: Numeric with a true zero (e.g., weight in kilograms).
 
 ---
+
 ## 5. Variables and Descriptive Statistics
 
 ### 5.1 From Data to Variables
-Data can be treated as **points in space**, and we often analyze these points using variables. Variables are functional relationships between elements of sets. These relationships can be deterministic or stochastic, representing the rule of association between inputs and outputs.
+Data can be analyzed using **variables**, which define functional relationships between inputs (elements of a set) and their associated outputs. These relationships may be deterministic or stochastic.
 
-#### Key Concept: Variables as Functions
-- **Function Notation**:
-  \[
-  f : X \to Y, \quad y = f(x) + \epsilon
-  \]
-  - \( X \): Domain (inputs).
-  - \( Y \): Range (outputs).
-  - \( \epsilon \): Uncertainty in the association.
-- **Types of Functions**:
-  1. **Deterministic Function**:
-     - No uncertainty (\( \epsilon = 0 \)).
-     - Example: \( y = 2x \), where each input \( x \) has a precise, predictable output.
-  2. **Random Function**:
-     - Includes uncertainty (\( \epsilon \neq 0 \)).
-     - Example: \( y = x^2 + \epsilon \), where the output varies slightly due to randomness.
+#### Variables as Functions
+A variable can be represented as a function:
+- **Notation**: \( f : X \to Y \), where:
+  - \( X \): Domain (set of inputs).
+  - \( Y \): Range (set of outputs).
+  - \( y = f(x) + \epsilon \): The output \( y \) is determined by the input \( x \), with \( \epsilon \) representing uncertainty.
+
+#### Types of Functions
+1. **Deterministic Function**:
+   - No uncertainty (\( \epsilon = 0 \)).
+   - Example: \( y = 2x \), where every input \( x \) has a precise and predictable output.
+2. **Random Function**:
+   - Includes uncertainty (\( \epsilon \neq 0 \)).
+   - Example: \( y = x^2 + \epsilon \), where the output varies due to random noise.
+
+---
 
 #### Random Variables
-- A **random variable** is a function that maps elements of a **sampling space** (\( S \)) to a range (\( T \)), with uncertainty:
-  \[
-  X : S \to T
-  \]
-- Example: Observing the result of a coin toss. The sample space \( S \) is the set of possible outcomes (heads or tails), and the random variable assigns a label (e.g., "Heads" or "Tails") to the result.
+A **random variable** maps elements from a sample space \( S \) to a range \( T \), with associated uncertainty:
+- **Notation**: \( X : S \to T \)
+- Example: For a coin toss, the sample space \( S = \{\text{Heads, Tails}\} \), and the random variable maps these outcomes to numeric labels (e.g., Heads = 1, Tails = 0).
 
 ---
 
 ### 5.2 Descriptive Statistics
-Descriptive statistics are measures that characterize properties of observations. They help summarize data and can be grouped into two main categories: **measures of central tendency** and **measures of dispersion**.
+Descriptive statistics summarize data to provide insight into its key properties. They are divided into measures of **central tendency** and **dispersion**.
 
-#### Key Definitions
-- **Statistic**: A measurement characterizing some property of an observation.
-  - Example: The **mean** is a statistic summarizing the "average" value of a dataset.
-- **Estimator**: A statistic calculated from a sample.
-  - Example: The sample average is an estimator of the population mean.
+#### Central Tendency
+Central tendency metrics describe the "center" or typical value of a dataset:
+1. **Mean**: The arithmetic average.
+   - Formula: \( \text{Mean} = \frac{\sum x_i}{n} \)
+   - Example: For the dataset \([2, 4, 6]\), \( \text{Mean} = \frac{2 + 4 + 6}{3} = 4 \).
+2. **Median**: The middle value when sorted.
+   - Example: For \([1, 3, 5]\), \( \text{Median} = 3 \).
+3. **Mode**: The most frequently occurring value.
+   - Example: For \([1, 2, 2, 3]\), \( \text{Mode} = 2 \).
 
-#### Common Descriptive Statistics
-1. **Central Tendency**:
-   - **Mean**: Arithmetic average.
-     \[
-     \text{Mean} = \frac{\sum x_i}{n}
-     \]
-   - **Median**: Middle value when data is sorted.
-   - **Mode**: Most frequent value.
-2. **Dispersion**:
-   - **Variance**: Average squared deviation from the mean.
-     \[
-     \text{Variance} = \frac{\sum (x_i - \mu)^2}{n}
-     \]
-   - **Standard Deviation (SD)**: Square root of variance, showing typical deviation from the mean.
+---
 
-#### Types of Variables and Valid Statistics
-Variables can be classified based on their measurement properties:
+#### Dispersion
+Dispersion metrics describe how spread out the data is:
+1. **Range**: The difference between the maximum and minimum values.
+   - Example: For \([1, 4, 9]\), \( \text{Range} = 9 - 1 = 8 \).
+2. **Variance**: Measures the average squared deviation from the mean.
+   - Formula: \( \text{Variance} = \frac{\sum (x_i - \mu)^2}{n} \)
+3. **Standard Deviation (SD)**: The square root of the variance.
+   - Indicates how much data typically deviates from the mean.
 
-| Measurement Type       | Variable Type       | Identity | Magnitude | Interval | Ratio |
-|-------------------------|---------------------|----------|-----------|----------|-------|
-| **Subjective**          | Subjective         | ✗        | ✗         | ✗        | ✗     |
-| **Qualitative**         | Nominal            | ✓        | ✗         | ✗        | ✗     |
-|                         | Ordinal            | ✓        | ✓         | ✗        | ✗     |
-| **Quantitative**        | Discrete           | ✓        | ✓         | ✗        | ✗     |
-|                         | Interval           | ✓        | ✓         | ✓        | ✗     |
-|                         | Ratio              | ✓        | ✓         | ✓        | ✓     |
+---
+
+### Types of Variables
+Variables are classified based on their properties, influencing what types of descriptive statistics are valid:
+
+| Variable Type       | Description                              | Examples                       | Valid Statistics                  |
+|---------------------|------------------------------------------|--------------------------------|-----------------------------------|
+| **Nominal**         | Categories without order                | Colors (red, blue, green)      | Frequency, Mode                  |
+| **Ordinal**         | Ordered categories                      | Ranks (gold, silver, bronze)   | Median, Range                    |
+| **Interval**        | Quantitative, no true zero              | Temperature (°C, °F)           | Mean, Median, Standard Deviation |
+| **Ratio**           | Quantitative, true zero exists          | Weight, height                 | All descriptive statistics       |
 
 ---
 
 ## 6. Signals and Noise
 
 ### 6.1 From Variables to Signals
-Not all data is purely about frequency or values—**where and when the data points occur can also matter**. When the location (loci) of observations is relevant, the data becomes a **signal**.
+When the location (loci) of observations matters, we treat data as **signals**. A signal is a structured relationship between observations and their positions in a lattice.
 
 #### Definition of a Signal
-A **signal** is a structured relationship between observations (\( Y \)) collected over a lattice (\( X, \preceq \)), where \( \preceq \) represents a partial order (topology) between points.
+A **signal** is a set of observations (\( Y \)) collected over a lattice (\( X, \preceq \)), where:
+- \( X \): Represents positions (e.g., time or space).
+- \( \preceq \): Defines a partial order (topology) over these positions.
 
-- **Examples of Signals**:
-  1. **1D Signals**: Audio waveforms (amplitude over time).
-  2. **2D Signals**: Grayscale images (intensity over spatial coordinates).
-  3. **Multidimensional Signals**: Videos (2D images over time).
-
-#### Importance of Order
-The order of observations within a signal affects its interpretation:
-- Two signals with the same set of observations but arranged differently will convey different meanings.
+#### Examples of Signals
+1. **1D Signals**: Amplitude of sound over time (e.g., audio waveform).
+2. **2D Signals**: Pixel intensity values over spatial coordinates (e.g., grayscale image).
+3. **Multidimensional Signals**: Video, where 2D images evolve over time.
 
 ---
 
 ### 6.2 Statistical Signal Descriptors
-Statistical descriptors characterize signals, often based on their co-domain (range of values).
+Statistical descriptors characterize signals based on their range of values. These include:
 
-#### Key Signal Descriptors
-1. **Mean**:
-   - Describes the central value of the signal.
-   - May not always be meaningful, especially in signals with trends or nonstationarity.
-2. **Standard Deviation (SD)**:
-   - Measures the spread of the signal’s values.
-   - Example: The SD of a stationary sine wave indicates variability but doesn’t capture trends.
-3. **Histogram**:
-   - A bar plot showing the frequency of values in the signal.
+1. **Mean**: Represents the central value of the signal.
+   - Caution: In nonstationary signals (e.g., trends), the mean may not be meaningful.
+2. **Standard Deviation (SD)**: Describes the signal's variability around its mean.
+   - Example: A sine wave has a consistent standard deviation, even with periodic oscillations.
+3. **Histogram**: Shows the frequency distribution of signal values.
+   - Example: For a grayscale image, a histogram shows the number of pixels for each intensity level.
 
 ---
 
 ### 6.3 Noise in Signals
-Noise represents unwanted variation or randomness in a signal.
+Noise refers to unwanted variation or random disturbances within a signal.
 
 #### Types of Noise
 1. **Coloured Noise**:
-   - Includes white, pink, red, blue, and violet noise, defined by their frequency characteristics.
+   - **White Noise**: Equal power across all frequencies (e.g., static on a radio).
+   - **Pink Noise**: More power at lower frequencies, common in natural systems.
+   - **Red Noise (Brownian Noise)**: Strong low-frequency components, resembling random walks.
 2. **Distribution-Based Noise**:
-   - Includes Gaussian, Poisson, and Ricci noise.
+   - **Gaussian Noise**: Follows a normal distribution, common in measurement errors.
+   - **Poisson Noise**: Associated with count data and low-light imaging.
 3. **Algorithmic Noise**:
-   - Includes Brownian (random walk) and fractal noise.
+   - **Brownian Noise**: Random walk behavior.
+   - **Fractal Noise**: Self-similar patterns over scales.
 
-#### Signal-to-Noise Ratio (SNR)
-The **SNR** quantifies the quality of a signal by comparing its power to the power of noise:
-\[
-\text{SNR} = \frac{P_{\text{signal}}}{P_{\text{noise}}}
-\]
+---
 
-For large dynamic ranges, SNR is often expressed in decibels:
-\[
-\text{SNR (dB)} = 10 \cdot \log_{10}\left(\frac{P_{\text{signal}}}{P_{\text{noise}}}\right)
-\]
+### 6.4 Quantifying Noise
+Noise is quantified using metrics that compare its impact on the signal.
 
-#### Coefficient of Variation (CV)
-An alternative metric to SNR, the CV measures relative variability:
-\[
-\text{CV} = \frac{\sigma_x}{\mu_x}
-\]
+1. **Signal-to-Noise Ratio (SNR)**:
+   - Measures the strength of the signal relative to noise.
+   - Formula:
+     \[
+     \text{SNR} = \frac{P_{\text{signal}}}{P_{\text{noise}}}
+     \]
+   - Example: High SNR means the signal is clear, while low SNR indicates significant noise.
+
+2. **Coefficient of Variation (CV)**:
+   - Measures relative variability of the signal.
+   - Formula:
+     \[
+     \text{CV} = \frac{\sigma_x}{\mu_x}
+     \]
+   - Useful for comparing variability across datasets with different units or scales.
