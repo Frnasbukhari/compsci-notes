@@ -4,10 +4,10 @@ Welcome to my university notes repository! Here you’ll find a growing collecti
 
 ## Contents
 
-- **[Operating Systems and System Programming](./operating-systems-and-system-programming)**  
+- **[Operating Systems and System Programming](./notes/operating-systems-and-system-programming)**  
   Explore how operating systems manage resources, processes, and concurrency, and learn the fundamentals of systems-level programming.
 
-- **[Intelligent-data-analysis](./Intelligent-data-analysis)**  
+- **[Intelligent-data-analysis](./notes/Intelligent-data-analysis)**  
   An optional module I'm currently undertaking in my final year.
 
 ## Usage
