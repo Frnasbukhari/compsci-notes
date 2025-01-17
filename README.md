@@ -4,7 +4,7 @@ Welcome to my university notes repository! Here you’ll find a growing collecti
 
 ## Contents
 
-- **[Operating Systems and System Programming](./notes/operating-systems-and-system-programming)**  
+- **[Operating Systems and System Programming](./notes/Operating-systems-and-system-programming)**  
   Explore how operating systems manage resources, processes, and concurrency, and learn the fundamentals of systems-level programming.
 
 - **[Intelligent-data-analysis](./notes/Intelligent-data-analysis)**  
