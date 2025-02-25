@@ -11,7 +11,14 @@ Whether you're exploring a specific topic or just browsing, I hope these resourc
   Explore how operating systems manage resources, processes, and concurrency, and learn the fundamentals of systems-level programming.
 
 - **[Intelligent-data-analysis](./notes/Intelligent-data-analysis)**  
-  An optional module I'm currently undertaking in my final year.
+  An optional module I’m currently undertaking in my final year, focusing on advanced data handling and dimensional analysis.
+  
+- **[Evolutionary-computation](./notes/Evolutionary-computation)**  
+  An optional module I'm currently undertaking in my final year, exploring optimization problems and evolutionary algorithms.
+
+- **[Intelligent-interactive-systems](./notes/Intelligent-interactive-systems)**  
+  An optional module I'm currently undertaking in my final year, exploring intellignet systems that adapt responsibly and cooperatively.
+
 
 ## Usage
 
