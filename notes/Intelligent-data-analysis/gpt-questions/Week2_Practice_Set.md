@@ -48,7 +48,7 @@ These questions focus on **ideas**, not heavy calculations.  Use them to check y
 
 ## Brief answers  
 
-1. a) Dimension $=3$. b) $B$ is a basis; its vectors are independent and span the whole space, so coordinates $(x,y,z)$ are unique.  
+1. a) Dimension =3 . b) B is a basis; its vectors are independent and span the whole space, so coordinates $(x,y,z)$ are unique.  
 
 2. Fourier packs most image energy into a few low‑frequency coefficients → fewer numbers to save.  
 
