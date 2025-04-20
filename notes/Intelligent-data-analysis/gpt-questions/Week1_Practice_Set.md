@@ -10,16 +10,16 @@ This practice set mirrors the tone, depth and notation style of the Week 1 lect
 ### Mini questions  
 
 1. **Sets & cardinality**  
-   Let \(A=\{\texttt{red},\texttt{blue},\texttt{green}\}\).  
-   1. State the cardinality \(|A|\).  
-   2. Explain (one sentence) why the tuple \((\texttt{green},\texttt{red})\) is *not* an element of \(A\).  
+   Let $A=\{\texttt{red},\texttt{blue},\texttt{green}\}$.  
+   1. State the cardinality $|A|$.  
+   2. Explain (one sentence) why the tuple $(\texttt{green},\texttt{red})$ is *not* an element of $A$.  
 
 2. **Cartesian product**  
-   Given \(B=\{1,2\}\) and \(C=\{x,y,z\}\), list every element of \(B \times C\).
+   Given $B=\{1,2\}$ and $C=\{x,y,z\}$, list every element of $B \times C$.
 
 3. **Relation spotting**  
-   For each relation on \(\mathbb N\) decide whether it is an **order**, an **equivalence**, or **neither**.  
-   a) \(xRy \iff x<y\) b) \(xRy \iff x \equiv y~(\text{mod }5)\).
+   For each relation on $\mathbb N$ decide whether it is an **order**, an **equivalence**, or **neither**.  
+   a) $xRy \iff x<y$ b) $xRy \iff x \equiv y~(\text{mod }5)$.
 
 4. **Variable types & admissible statistics**  
    Classify each variable and name **one statistic** that is valid for it.  
@@ -34,20 +34,20 @@ This practice set mirrors the tone, depth and notation style of the Week 1 lect
    You observe the values `[2,2,3,5,2,5,3]`. Draw a two‑column frequency table (value / count).
 
 7. **Noise characterisation**  
-   A microphone captures \(x(t)=f(t)+\varepsilon(t)\) where \(\varepsilon(t)\) is *white* noise.  
+   A microphone captures $x(t)=f(t)+\varepsilon(t)$ where $\varepsilon(t)$ is *white* noise.  
    1. State one defining spectral property of white noise.  
    2. Explain in one line why pink noise would not be an appropriate model here.
 
 8. **SNR quick check**  
-   A signal segment has sample mean \( \mu=0.8\,\text{V}\) and (biased) standard deviation \(\sigma=0.2\,\text{V}\).  
-   Compute an estimator of the SNR using \( \mathrm{SNR}\approx \mu/\sigma \).
+   A signal segment has sample mean $\mu=0.8\,\text{V}$ and (biased) standard deviation $\sigma=0.2\,\text{V}$.  
+   Compute an estimator of the SNR using $\mathrm{SNR}\approx \mu/\sigma$.
 
 ---
 
 ### Extended questions  
 
 9. **Descriptive‑statistics workout**  
-   Dataset: \(D=[4,7,7,8,10,12,13,13,13,18]\).  
+   Dataset: $D=[4,7,7,8,10,12,13,13,13,18]$.  
    1. Compute **mean, median, mode, variance (biased), SD**.  
    2. Draw a histogram with sensible binning and comment on skew.  
    3. Give the coefficient of variation (CV) and interpret its magnitude.  
@@ -88,11 +88,11 @@ This practice set mirrors the tone, depth and notation style of the Week 1 lect
 ### Mini  
 
 1. **Answer**  
-   a) \(|A| = 3\).  
-   b) \(A\) is *unordered* and its elements are singletons, not ordered pairs.
+   a) $|A| = 3$.  
+   b) $A$ is *unordered* and its elements are singletons, not ordered pairs.
 
 2. **Answer**  
-   \(B\times C = \{(1,x),(1,y),(1,z),(2,x),(2,y),(2,z)\}\).
+   $B\times C = \{(1,x),(1,y),(1,z),(2,x),(2,y),(2,z)\}$.
 
 3. **Answer**  
    a) Order (strict). b) Equivalence (reflexive, symmetric, transitive).
@@ -118,7 +118,7 @@ This practice set mirrors the tone, depth and notation style of the Week 1 lect
    2) Pink noise has 1/f spectrum, overweighting low frequencies—thus mismatching ambient microphone hiss.
 
 8. **Answer**  
-   \(\text{SNR} \approx 0.8 / 0.2 = 4\).
+   $\text{SNR} \approx 0.8 / 0.2 = 4$.
 
 ---
 
@@ -130,21 +130,18 @@ This practice set mirrors the tone, depth and notation style of the Week 1 lect
    *Median*: 11  
    *Mode*: 13  
 
-   *Variance* (biased):  
-   \[
-     s^{2}=\frac{\sum(x_i-\mu)^2}{n}=20.45
-   \]
+   *Variance* (biased): $s^{2}=\frac{\sum(x_i-\mu)^2}{n}=20.45$
 
-   *SD*: \(s \approx 4.52\)  
+   *SD*: $s \approx 4.52$  
 
    *Histogram*: three bins 0‑6, 6‑12, 12‑18 → unimodal, slight right skew.  
 
-   *CV*: \(4.52/10.5 \approx 0.43\) → moderate dispersion.
+   *CV*: $4.52/10.5 \approx 0.43$ → moderate dispersion.
 
 10. **Answer**
 
-   1. \(I=\{(0,0,0),(0,1,128),(1,0,255),(1,1,128)\}\).  
-   2. Define pixel‑wise addition and scalar multiplication (vector space \(\mathbb R^{4}\)).  
+   1. $I=\{(0,0,0),(0,1,128),(1,0,255),(1,1,128)\}$.  
+   2. Define pixel‑wise addition and scalar multiplication (vector space $\mathbb R^{4}$).  
    3. Filtering is a linear operator on that space; the data’s label (“image” vs “signal”) does not affect the algebraic action.
 
 11. **Answer**
@@ -155,7 +152,7 @@ This practice set mirrors the tone, depth and notation style of the Week 1 lect
 12. **Answer**
 
    1. The **1 Hz high‑pass** filter.  
-   2. Its transfer function is ≈0 below 1 Hz; applying operator \(H\) annihilates the subspace of interest.  
+   2. Its transfer function is ≈0 below 1 Hz; applying operator $H$ annihilates the subspace of interest.  
    3. • Omit the high‑pass (or set cutoff ≤ 0.05 Hz).  
       • Keep ICA → notch → low‑pass 30 Hz.
 
