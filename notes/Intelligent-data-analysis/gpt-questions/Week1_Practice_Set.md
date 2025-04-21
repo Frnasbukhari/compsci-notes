@@ -60,7 +60,7 @@ This practice set mirrors the tone, depth and notation style of the Week 1 lect
          [255, 128]]
     ```  
 
-    1. Treating each pixel as a point in \(\mathbb R\), give the set representation of \(I\).  
+    1. Treating each pixel as a point in $\mathbb R$, give the set representation of \(I\).  
     2. Specify one **operation** that turns this set into a *space* suitable for linear filtering.  
     3. Explain in ≤100 words why “image” vs “signal” is semantically irrelevant for this operation.
 
