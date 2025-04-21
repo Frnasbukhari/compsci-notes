@@ -140,21 +140,21 @@ This practice set mirrors the tone, depth and notation style of the Week 1 lect
 
 10. **Answer**
 
-   1. $I=\{(0,0,0),(0,1,128),(1,0,255),(1,1,128)\}$.  
-   2. Define pixel‑wise addition and scalar multiplication (vector space $\mathbb R^{4}$).  
-   3. Filtering is a linear operator on that space; the data’s label (“image” vs “signal”) does not affect the algebraic action.
+      1. $I=\{(0,0,0),(0,1,128),(1,0,255),(1,1,128)\}$.  
+      2. Define pixel‑wise addition and scalar multiplication (vector space $\mathbb R^{4}$).  
+      3. Filtering is a linear operator on that space; the data’s label (“image” vs “signal”) does not affect the algebraic action.
 
 11. **Answer**
 
-   1. Ordinal.  
-   2. Mean & SD assume equal intervals—invalid here. Use median or mode.
+      1. Ordinal.  
+      2. Mean & SD assume equal intervals—invalid here. Use median or mode.
 
 12. **Answer**
 
-   1. The **1 Hz high‑pass** filter.  
-   2. Its transfer function is ≈0 below 1 Hz; applying operator $H$ annihilates the subspace of interest.  
-   3. • Omit the high‑pass (or set cutoff ≤ 0.05 Hz).  
-      • Keep ICA → notch → low‑pass 30 Hz.
+      1. The **1 Hz high‑pass** filter.  
+      2. Its transfer function is ≈0 below 1 Hz; applying operator $H$ annihilates the subspace of interest.  
+      3. • Omit the high‑pass (or set cutoff ≤ 0.05 Hz).  
+         • Keep ICA → notch → low‑pass 30 Hz.
 
 ---
 
