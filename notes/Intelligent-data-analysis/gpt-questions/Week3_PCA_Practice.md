@@ -42,7 +42,8 @@ d. The variance of a variable equals its covariance with itself.
 
 ### Q3 Two‑by‑two PCA warm‑up  
 Given the covariance matrix  
-$\Sigma = \begin{bmatrix} 2 & 1 \\ 1 & 2 \end{bmatrix}$  
+[ 2   1 ]       
+[ 1   2 ]  
 
 1. Find the eigenvalues and their associated eigenvectors.  
 2. Compute the proportion of total variance explained by the first principal component.
@@ -70,7 +71,12 @@ D. Options A and B.
 
 ### Q6 Fast eigen‑test  
 Let  
-$A = \begin{bmatrix} 4 & 0 \\ 0 & 9 \end{bmatrix}$ and $v = \begin{bmatrix} 1 \\ 3 \end{bmatrix}$.  
+$A =$    
+[ 4   0 ]         
+[ 0   9 ]      
+and $v =$      
+[ 1 ]      
+[ 3 ] 
 
 Is $v$ an eigenvector of $A$? If **yes**, state the eigenvalue; if **no**, justify briefly.
 
@@ -102,7 +108,8 @@ You manage a micro‑fund tracking three risk metrics $\{R_1,R_2,R_3\}$. Six wee
 ### Q8 Eigen‑driven investment hedge  
 A $2\times2$ covariance matrix for returns is
 
-$\Sigma = \begin{bmatrix} 25 & -15 \\ -15 & 25 \end{bmatrix}$.
+[ 25   -15 ]      
+[ -15   25 ]
 
 1. **Diagonalise** $\Sigma$ via eigendecomposition.  
 2. **Interpret** the eigenvectors in plain English: what portfolio directions do they represent?  
@@ -124,7 +131,7 @@ $\Sigma = \begin{bmatrix} 25 & -15 \\ -15 & 25 \end{bmatrix}$.
 ### Q2 Solution  
 a F b T c F d T  
 
-*Covariance changes with units; doubling $X$ doubles $s_{XY}$.*
+Covariance changes with units; doubling $X$ doubles $s_{XY}$.
 
 ---
 
