@@ -61,25 +61,19 @@ Three points in $\mathbb R^{2}$ are $p_1=(2,4)$, $p_2=(5,1)$, $p_3=(3,3)$.
 
 $X = $  
 
-|2|5|3|
-|--|--|--|
-|4|1|3|
+
 
 2. Compute the mean vector $\mu$.  
 
 $\mu = $  
 
-|3.33|
-|--|
-|2.67|
+
 
 3. Construct the centered matrix $X' = X-\mu \mathbf 1^{T}$.
 
 $X' = $  
 
-|-1.33|1.67|-0.33|
-|--|--|--|
-|1.33|-1.67|0.33|
+
 
 ---
 
@@ -174,11 +168,26 @@ Total variance $=4$ so PC1 explains $75\%$.
 
 ### Q4 Solution  
 
-$X$ as above.
+$X$ 
 
-$\mu$ as above.
+|2|5|3|
+|--|--|--|
+|4|1|3|
 
-$X'$ as above.
+
+$\mu$ 
+
+|3.33|
+|--|
+|2.67|
+
+
+
+$X'$ 
+
+|-1.33|1.67|-0.33|
+|--|--|--|
+|1.33|-1.67|0.33|
 
 ---
 
