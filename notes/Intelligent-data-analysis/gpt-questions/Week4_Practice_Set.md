@@ -21,7 +21,7 @@ Marks in square brackets are guidance only.*
 ## Section II – Short Worked Questions  (5 – 8 marks each)
 
 ### Q2  Discrete Entropy  
-A fair 4‑sided die has faces $\{1,2,3,4\}$. A **loaded** die is biased so that  
+A fair 4‑sided die has faces {1,2,3,4}. A **loaded** die is biased so that  
 $P(1)=0.05$, $P(2)=0.15$, $P(3)=0.3$, $P(4)=0.5$.  
 
 1. Compute the Shannon entropy of the fair die (use base 2).  
@@ -70,7 +70,13 @@ Observed mixtures $Y$ are obtained from **two** sources $X$ by
 
    Apply **one** gradient‑ascent step  
    $W_{\text{new}} = W_{\text{old}} + h \nabla H$  
-   with learning rate $h=0.1$ and (toy) gradient $\nabla H=\begin{bmatrix}0.2&-0.1\\0.05&0.03\end{bmatrix}$.  
+   with learning rate $h=0.1$ and (toy) gradient matrix **∇H**
+
+   |        | **y₁** | **y₂** |
+   |--------|-------:|-------:|
+   | **w₁** | 0.20   | −0.10  |
+   | **w₂** | 0.05   | 0.03   |
+   
    Provide $W_{\text{new}}$ (write it as a table).
 
 *(You may leave answers as decimals to 3 dp.)*
@@ -83,12 +89,10 @@ Observed mixtures $Y$ are obtained from **two** sources $X$ by
 You record two microphone signals in a room with **two** people speaking simultaneously.  
 The sensor model is  
 
-$$
-\begin{bmatrix}y_1(t)\\y_2(t)\end{bmatrix}
-=
-\begin{bmatrix}0.7 & 0.5\\0.3 & 0.8\end{bmatrix}
-\begin{bmatrix}s_1(t)\\s_2(t)\end{bmatrix},
-$$
+```text
+[y₁(t)]   [0.7  0.5] [s₁(t)]
+[y₂(t)] = [0.3  0.8] [s₂(t)]
+```
 
 where $s_1$ and $s_2$ are statistically independent speech sources.
 
@@ -133,11 +137,14 @@ Outline each logical step and state any theorems you invoke.
 
 #### Q2  
 1. Fair die: $H=-4\times\frac14\log_2\frac14 =2$ bits.  
-2. Loaded:  
-\[
-H=-\!\bigl(0.05\log_20.05+0.15\log_20.15+0.3\log_20.3+0.5\log_20.5\bigr)
-=1.685\text{ bits (3 dp)}.
-\]  
+2. Loaded:
+       
+```text
+H = −(0.05·log₂ 0.05 + 0.15·log₂ 0.15
+      + 0.30·log₂ 0.30 + 0.50·log₂ 0.50)
+  = 1.685 bits   (3 dp)
+```
+       
 3. The fair die has higher entropy ⇒ each outcome is less predictable ⇒ it conveys more information.
 
 ---
@@ -172,7 +179,14 @@ Since at least one cell violates the factorisation, $A$ and $B$ are **not** inde
 #### Problem A  
 (a) PCA enforces **orthogonality**; independence is a stronger, nonlinear criterion, so PCA can at best decorrelate but not fully demix sources that are still dependent in higher‑order statistics.  
 (b) Steps: centre the data; whiten (eigen‑ or SVD‑based); optionally reduce dimensionality; initialise $W$.  
-(c) $\hat s=W y$ with $W=\beta^{-1}=\begin{bmatrix}1.333&-0.833\\-0.5&1.167\end{bmatrix}$ gives $\hat s_1=1.333y_1-0.833y_2$, etc.  
+(c) $\hat s=W y$ with **W = β⁻¹**
+
+|        | **y₁** | **y₂** |
+|--------|-------:|-------:|
+| **s₁** | 1.333  | −0.833 |
+| **s₂** | −0.500 | 1.167  |
+
+, etc.  
 (d) More sources than sensors → mixing matrix non‑square: not invertible; need sparse or temporal structure to separate; under‑determined ICA.  
 (e) Super‑Gaussian signals usually dominate the contrast functions (e.g. kurtosis); the Gaussian source may be poorly separated because its negentropy is zero.
 
