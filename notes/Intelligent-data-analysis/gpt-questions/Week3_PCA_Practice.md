@@ -96,7 +96,10 @@ $A = $
 |--|--|
 |0|9|
 
-and $v = \begin{bmatrix} 1 \\ 3 \end{bmatrix}$.  
+and $v =$
+
+[ 1 ]      
+[ 3 ]
 
 Is $v$ an eigenvector of $A$? If **yes**, state the eigenvalue; if **no**, justify briefly.
 
@@ -219,6 +222,7 @@ $Av\neq\lambda v$ for any scalar $\lambda$, so **no**, $v$ is not an eigenvector
 |0.18|0.98|0.07|
 |0.59|0.07|-0.81|
 
+> These can look different than yours. Look at my answer sheet to verify.
 4. Cumulative variance after PC2: $82\%$.  
 
 5. Scores:
@@ -231,6 +235,8 @@ $Av\neq\lambda v$ for any scalar $\lambda$, so **no**, $v$ is not an eigenvector
 |4| -1.21|  0.04|
 |5|  0.64|  0.63|
 |6|  1.04| -0.16|
+
+> These too can look different. Check my answer.
 
 6. **Yes** — 82 % variance retention meets common thresholds.
 
