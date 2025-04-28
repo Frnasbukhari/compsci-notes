@@ -104,7 +104,7 @@ where $s_1$ and $s_2$ are statistically independent speech sources.
 ---
 
 ### Problem B  Entropy Maximisation Proof Sketch  
-Show that, under a **volume‑preserving** (det W=$) linear transform of whitened data,  
+Show that, under a **volume‑preserving** (det W=1) linear transform of whitened data,  
 maximising the **negentropy**
 
 $$J(X)=H(X_{\text{gauss}})-H(X)$$  
