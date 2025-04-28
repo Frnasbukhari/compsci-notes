@@ -1,4 +1,3 @@
-
 # Intelligent Data Analysis – Week&nbsp;4 Practice Workbook  
 **Topic:** Dimensional analysis by statistical independence (Independent Component Analysis)  
 
@@ -33,8 +32,8 @@ $P(1)=0.05$, $P(2)=0.15$, $P(3)=0.3$, $P(4)=0.5$.
 ### Q3  Joint Distribution & Independence  
 Two binary variables $A$ and $B$ have joint probabilities:
 
-| $B=0$ | $B=1$ |
-|-------|-------|
+| | $B=0$ | $B=1$ |
+|-------|-------|-------|
 | **$A=0$** | 0.20 | 0.30 |
 | **$A=1$** | 0.25 | 0.25 |
 
@@ -105,7 +104,7 @@ where $s_1$ and $s_2$ are statistically independent speech sources.
 ---
 
 ### Problem B  Entropy Maximisation Proof Sketch  
-Show that, under a **volume‑preserving** (det $W=1$) linear transform of whitened data,  
+Show that, under a **volume‑preserving** (det W=$) linear transform of whitened data,  
 maximising the **negentropy**
 
 $$J(X)=H(X_{\text{gauss}})-H(X)$$  
@@ -125,7 +124,7 @@ Outline each logical step and state any theorems you invoke.
 ### Section I Solutions
 
 1. $X$ and $Y$ are independent if and only if $P(X=x,Y=y)=P(X=x)\,P(Y=y)$ for all $(x,y)$.  
-2. Independence ⇒ zero covariance, but the converse fails when variables have a nonlinear relation (e.g. $Y=X^2$ with zero‑mean $X$).  
+2. Uncorrelated variables can still be dependent if their relationship is nonlinear, which correlation doesn't capture.
 3. (i) $f(x)\ge0$ ∀$x$; (ii) $\int_{-\infty}^{\infty} f(x)\,dx =1$.  
 4. $H(X)=-\sum_i P(x_i)\log_2 P(x_i)$.  
 5. Sources have **non‑Gaussian** distributions and zero mean (data are centred); also the mixing is **linear & stationary**.  
