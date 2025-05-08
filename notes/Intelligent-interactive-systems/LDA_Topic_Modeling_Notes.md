@@ -1,0 +1,106 @@
+# Latent Dirichlet Allocation (LDA) & Related Concepts  
+*Concise, plain‑English annotated notes sourced from the uploaded readings*
+
+---
+
+**1. Why “Topics” at All?**  
+Latent Dirichlet Allocation (**LDA — statistical recipe for finding hidden themes**) models documents as blends of underlying *topics* (word-distribution patterns) instead of raw word bags. This cuts noise, reveals structure, and feeds downstream tasks like classification.
+
+---
+
+**2. From Raw Counts to Smarter Counts**  
+1. **tf‑idf (term frequency–inverse document frequency — how often a word appears, discounted if it’s everywhere)** turns each document into a vector of weighted counts.  
+2. **Singular Value Decomposition (SVD — matrix‑factoring shortcut that keeps only dominant patterns)** underlies **Latent Semantic Indexing (LSI — early “semantic space” trick)**, projecting the huge *document × word* grid into a compact latent space that loosely captures synonymy/polysemy.
+
+---
+
+**3. Probabilistic Turn: Comparing Topic Models**  
+
+| Model | Plain‑English Pitch | Advantages | Limitations |
+|-------|--------------------|------------|-------------|
+| **Mixture of Unigrams** | “1 topic per doc.” | Simple math | Unrealistic for multi‑theme docs |
+| **pLSI (probabilistic LSI — pick a topic for every word)** | Allows word‑level topic switches | Captures mixed docs | No true generative doc model → can’t score new docs |
+| **LDA (Latent Dirichlet Allocation)** | Full generative story for corpora | Handles unseen docs, Bayesian elegance | Needs approximate inference |
+
+---
+
+**4. LDA’s Generative Process (Decoded)**  
+1. Draw **θ (theta — the doc’s topic pie‑chart)** from a **Dirichlet distribution Dir(α) — random generator for proportions that sum to 1**.  
+2. For each of *N* word slots:  
+   1. Pick a **topic *z*** from *θ* (**Multinomial — multi‑sided dice**).  
+   2. Pick a **word *w*** from that topic’s word distribution **β (beta — lookup table of word probabilities per topic)**.  
+
+> Exchangeability assumption: order is ignored; counts rule.
+
+---
+
+**5. Inference & Learning**  
+
+| Term | Plain English |
+|------|---------------|
+| **Variational Inference** | Replace the impossible posterior with a simpler stand‑in and tune it until close. |
+| **γ (gamma)** | Document‑specific Dirichlet parameters — your new low‑dimensional features. |
+| **φ (phi)** | Per‑word topic assignment probabilities. |
+| **EM (Expectation‑Maximization)** | Alternate between guessing hidden variables (E‑step) and updating parameters (M‑step). |
+| **Perplexity** | Lower number ⇒ model less “surprised” by unseen text. |
+
+---
+
+**6. Practical Pipeline (Python + gensim example)**  
+1. **Tokenize** → split text.  
+2. **Lowercase & stop‑word filter**.  
+3. **Stem/Lemmatize** to merge word variants.  
+4. **Build Dictionary** (word → id) and **Bag‑of‑Words corpus** (id, count).  
+5. **Filter extremes** (rare & ultra‑common words).  
+6. Train `gensim.models.LdaModel(corpus, id2word, num_topics=K, …)`.  
+7. Use **γ‑vectors** for classification or visualize with **pyLDAvis**.
+
+---
+
+**7. Applications**  
+- **Document modelling** — assign probabilities to new text.  
+- **Dimensionality reduction** — feed γ into SVMs; smaller feature set, similar accuracy.  
+- **Collaborative filtering** — treat users as docs, items as words to predict preferences.  
+- **Soft clustering** — θ gives percentage membership across topic “clusters”.
+
+---
+
+**8. Clustering Background**  
+**K‑means (hard clustering — one cluster per doc)** minimizes **RSS (Residual Sum of Squares — total squared distance)**.  
+**EM with Gaussian/Bernoulli mixtures (soft clustering)** outputs fractional memberships.
+
+---
+
+**9. Evaluation Metrics**  
+
+| Metric | Measures | Quirks |
+|--------|----------|--------|
+| **Purity** | Majority class per cluster | Inflates with many small clusters |
+| **Rand Index (RI)** | Pairwise agreement | Sensitive to class imbalance |
+| **F‑measure** | Harmonic mean of precision & recall | Needs weighting |
+| **NMI (Normalized Mutual Information)** | Shared information | Penalizes neither too many nor too few clusters |
+| **V‑measure** | Harmonic mean of **Homogeneity** (single‑class clusters) & **Completeness** (full class captured) | Entropy‑based, robust |
+
+---
+
+**10. Extensions & Limitations**  
+- **Correlated/Dynamic/Hierarchical LDA** relax independence, track time, build topic trees.  
+- **Beyond Bag‑of‑Words**: add n‑grams or syntax to keep phrase context.  
+- **Choosing *K***: use topic coherence or downstream scores.  
+- **Interpretability**: topics still need human labels.
+
+---
+
+**11. Quick Glossary**  
+
+| Term | Meaning |
+|------|---------|
+| **Topic** | Hidden theme explaining co‑occurrence of words |
+| **Dirichlet** | Distribution over probability vectors |
+| **Multinomial** | Generalized dice for discrete outcomes |
+| **Exchangeability** | Order irrelevance assumption |
+| **Soft clustering** | Allowing partial membership in multiple groups |
+
+---
+
+*End of guide.*  
