@@ -1,0 +1,94 @@
+# Responsible AI & Large Language Models – Lecture Notes
+
+*GitHub‑ready Markdown*
+
+---
+
+## **1. Language Models (LMs)**  
+
+1. **Neural Language Model** – *probability engine* that guesses the next word using all previous words.  
+2. **Transformer architecture** – *attention‑powered circuitry* that lets the model focus on every part of the sentence at once.  
+3. **Auto‑regressive LM** – writes text *one word at a time*, feeding each new word back in.  
+4. **Auto‑encoding LM** – reads the whole text *all at once* to understand and correct it.  
+5. **Sequence‑to‑sequence / Encoder‑decoder** – *translator* that converts one sequence (input) into another (output).  
+
+---
+
+## **2. Core Terminology**
+
+| #   | Technical Term                | Plain‑English Translation                         |
+|-----|------------------------------|---------------------------------------------------|
+| 2.1 | **Self‑supervised learning** | Model *teaches itself* using unlabeled text.      |
+| 2.2 | **Pre‑training / Foundation Model** | The *baseline brain* learned from huge text before any task‑specific work. |
+| 2.3 | **Fine‑tuning**              | *On‑the‑job training* on a labeled dataset to specialize the model. |
+| 2.4 | **Prompt‑based learning**    | *Ask‑and‑answer mode*—solve tasks just by writing clever instructions. |
+| 2.5 | **Word embedding**           | A *number row* that represents a word’s meaning.  |
+| 2.6 | **Contextual embedding**     | A word’s *meaning row* that changes with its sentence. |
+
+---
+
+## **3. Popularisation of LMs**
+
+1. **GPT lineage** – GPT‑1 (2018) → GPT‑2 (2019) → GPT‑3 (2020) → GPT‑4 (2023‑25): each leap multiplies parameters and fluency.  
+2. **Media moment** – *The Guardian* headline “A robot wrote this article” sparked mainstream curiosity.  
+3. **Open‑source surge** – Meta, Mistral, DeepSeek released ChatGPT‑style models, fueling a *feature arms race*.  
+
+> **Executive insight:** Competitive advantage now hinges on rapid iteration and model governance, not raw parameter count.
+
+---
+
+## **4. Responsible AI & Model Limitations**
+
+| Risk Pillar       | Plain‑English Meaning      | Typical Symptoms         |
+|-------------------|----------------------------|--------------------------|
+| **Fairness / Bias** | Treats groups unequally     | Stereotypes, offensive text |
+| **Transparency**  | Hard to see *how* it thinks | “Black‑box” decisions    |
+| **Security**      | Vulnerable to *prompt attacks* | Leaked system prompts    |
+| **Robustness**    | Unreliable or *hallucinates* | Fabricated facts         |
+| **Privacy/IP**    | May reveal training data    | Confidential data spillage |
+| **Environment**   | Large carbon footprint      | High GPU energy costs    |
+
+> **Mitigation mandate:** Integrate risk scans at every SDLC checkpoint and enforce red‑team testing pre‑production.
+
+---
+
+## **5. Bias – What & Why**
+
+- **Definition:** Systematic, unfair preference for—or against—specific groups.  
+- **Impacts:** Amplifies inequality, generates toxic language, invites legal exposure.  
+- **Real‑world slip‑up:** Base model answered “Who is the most beautiful person?” with ageist stereotypes—proof of embedded bias.
+
+### 5.1 Mitigation Toolkit
+
+| Stage            | Technique                      | Plain English            |
+|------------------|--------------------------------|--------------------------|
+| **Pre‑processing** | Balanced sampling, data augmentation | *Fix the training diet*   |
+| **In‑training**  | Fairness constraints, adversarial debiasing | *Teach fairness rules* |
+| **Post‑processing** | Output filtering, re‑ranking   | *Clean‑up after the fact* |
+
+> **Strategic note:** Current research skews English‑centric—global deployments must localize fairness definitions.
+
+---
+
+## **6. Alignment & Safety Techniques**
+
+1. **Fine‑tuning w/ PALMS** – Train on value‑targeted data; boosts safety but narrows versatility.  
+2. **RLHF (Reinforcement Learning from Human Feedback)** – Human raters score outputs; model learns “what good looks like.”  
+3. **Constitutional AI (Anthropic Claude)** – Hard‑code a *charter of principles* the model self‑critiques against.  
+4. **Prompt engineering & embeddings‑augmented retrieval** – Craft domain‑specific prompts and fetch supporting documents to cut hallucinations.  
+5. **Monitoring & guardrails** – Logging, anomaly detection, refuse‑to‑answer filters, content moderation APIs.
+
+> **Operational KPI:** Track hallucination rate, unsafe content rate, and user satisfaction to quantify alignment success.
+
+---
+
+## **7. Conclusion**
+
+- Transformers dominate modern NLP due to contextual attention.  
+- Model race continues, but **Responsible AI** dictates market viability.  
+- Key challenges—bias, explainability, robustness, security—require a layered mitigation stack (data, model, prompt, policy).  
+- Future‑proof strategy: combine **governance frameworks** with agile model iteration to align LLM capability with human values and business objectives.
+
+---
+
+*End of lecture notes*
