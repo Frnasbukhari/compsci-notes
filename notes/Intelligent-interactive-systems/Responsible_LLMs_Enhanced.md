@@ -1,11 +1,6 @@
 # Responsible AI & Large Language Models  
-*Lecture notes – expanded & learner‑friendly*
 
-> **Why these notes?**  
 > Large Language Models (LLMs) such as GPT‑4 are already shaping how we write, code and even make decisions. Mastering the *tech* **and** the *responsibility* that comes with it is therefore a core skill for every modern AI practitioner.  
-> These notes walk you through the journey from “what is a language model?” to “how do we keep it safe, fair and useful?”. Each section opens with a short orientation so you always know *why* the next idea matters.
-
----
 
 ## 1 · What Are Language Models?  
 
@@ -18,8 +13,6 @@ Language Models (LMs) are probability engines that look at **context** (previous
 | **Auto‑regressive** | Generates text token‑by‑token, feeding each new token back in. |
 | **Auto‑encoding** | Reads the whole text in parallel, great for understanding or rewriting. |
 | **Sequence‑to‑sequence (encoder‑decoder)** | Converts one sequence into another (e.g., translation, summarisation). |
-
-*Why start here?* You cannot understand safety or bias controls until you grasp **where** a model gets its predictions from and **how** its architecture shapes its behaviour.
 
 ---
 
@@ -35,8 +28,6 @@ Before we dive deeper, let’s agree on a vocabulary. These terms appear in pape
 | **Prompt‑based learning** | Steering the model with carefully crafted instructions instead of gradient updates. |
 | **Word embedding** | A fixed‑length numeric vector that captures a word’s meaning. |
 | **Contextual embedding** | The same word gets a *different* vector depending on its sentence, enabling nuance. |
-
-Keep this table handy—later sections build on these concepts without re‑defining them.
 
 ---
 
@@ -65,7 +56,7 @@ A clever model is useless if people cannot **trust** it. Six risk pillars summar
 | **Privacy / IP** | Outputs may reveal personal or copyrighted text from training data. | Data leakage, legal exposure. |
 | **Environment** | Training and serving burn megawatt‑hours of electricity. | High cloud bills, carbon footprint. |
 
-*Connection to next section:* The first pillar—**bias**—is both the easiest to demonstrate and the hardest to eradicate at scale, so we examine it in depth.
+The first pillar—**bias**—is both the easiest to demonstrate and the hardest to eradicate at scale, so we examine it in depth.
 
 ---
 
@@ -95,37 +86,11 @@ Having reduced bias, we still need the model to *follow instructions* while refu
 
 | Technique | How it works | Trade‑offs |
 |-----------|--------------|-----------|
-| **Fine‑tuning with PALMS or similar** | Add thousands of “good vs bad” examples to the training set. | Fast, but narrows versatility. |
+| **Fine‑tuning with PALMS (Process for Adapting Language Models to Society) or similar** | Add thousands of “good vs bad” examples to the training set. | Fast, but narrows versatility. |
 | **RLHF (Reinforcement Learning from Human Feedback)** | Humans rank multiple outputs; model is rewarded for preferred ones. | High quality, expensive to scale. |
 | **Constitutional AI** | Provide a written charter (e.g., “no hate speech”) and let the model self‑critique. | Cheap inference, fragile if charter incomplete. |
 | **Prompt engineering + Retrieval Augmented Generation (RAG)** | Supply domain‑specific context so the model cites facts instead of hallucinating them. | Requires clean external knowledge base. |
 | **Monitoring & Guardrails** | Log every request, flag anomalies, throttle or block unsafe generations. | Ongoing ops cost, but essential for production. |
 
-*Key metric set:* Hallucination rate, unsafe content rate, and user satisfaction. Track these weekly if you run an LLM in production.
+*Key metric set:* Hallucination rate, unsafe content rate, and user satisfaction.
 
----
-
-## 7 · Key Takeaways & Next Steps  
-
-1. **Transformers + huge corpora = today’s NLP superpower.**  
-2. Raw capability alone is **not** a product—responsibility adds the missing trust layer.  
-3. Bias, transparency, robustness, security, privacy and environmental impact each need **explicit controls** woven throughout data, model, prompt and policy.  
-4. As models commoditise, *governance playbooks* and *fast iteration* become the true competitive edge.  
-
-**Action checklist for practitioners**
-
-- Map each risk pillar to clear engineering and policy owners.  
-- Start with a small, auditable model; scale up only after passing red‑team tests.  
-- Automate metrics (bias, hallucination, uptime) into CI/CD so regressions are caught early.  
-- Keep your threat model and fairness definitions up to date with local regulations.
-
----
-
-### Further Reading  
-
-* Jurafsky & Martin, *Speech and Language Processing*, 3rd ed. (draft).  
-* Bommasani et al., “On the Opportunities and Risks of Foundation Models,” Stanford CRFM, 2021.  
-* EU AI Act (final text, 2024) – compliance checkpoints for LLM deployers.  
-
----  
-*End of notes.*  
