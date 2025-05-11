@@ -1,0 +1,189 @@
+
+# Probabilistic Reasoning & Markov Decision Processes  
+
+> *“Good decisions flow from clear probabilities and long‑term thinking.”*  
+
+---
+
+## 1  |  Roadmap  
+**You will learn** how to  
+1. update beliefs with **Bayes’ theorem**,  
+2. plan sequential actions with **Markov Decision Processes (MDPs)**, and  
+3. avoid the cognitive & statistical traps that derail both humans and AIs.  
+
+---
+
+## 2  |  Bayes Made Intuitive  
+
+### 2.1  The theorem in plain English  
+> **Posterior = (Evidence if theory true × Base rate) ÷ Overall evidence.**
+
+Mathematically  
+
+\\[
+P(H\\mid E)=\\frac{{P(E\\mid H)\\,P(H)}}{{P(E)}}
+\\]
+
+### 2.2  Worked example using natural frequencies  
+| People (out of 1 000) | Test outcome | Disease Q status | Count |
+|-----------------------|--------------|------------------|-------|
+| Have Q                | **Positive** | Diseased         | 9     |
+| Have Q                | Negative     | Diseased         | 1     |
+| Healthy               | **Positive** | Healthy          | 89    |
+| Healthy               | Negative     | Healthy          | 901   |
+
+Only **9 of the 98 positives** actually have the disease → probability ≈ **9 %**.  
+Most novices guess 81 % because they mix up sensitivity with the answer citeturn3file0.
+
+### 2.3  Why natural frequencies beat percentages  
+Natural counts keep base rates visible and dodge denominator neglect, a prime cause of “statistical illiteracy” in medicine citeturn3file18.
+
+---
+
+## 3  |  Markov Foundations  
+
+### 3.1  Markov Chain recap  
+Tomorrow depends only on **today** (memory‑less).  
+
+### 3.2  Anatomy of an MDP  
+| Symbol | Meaning | Plain English |
+|--------|---------|---------------|
+| \\(S\\) | States | Situations an agent can be in |
+| \\(A\\) | Actions | Choices available |
+| \\(P(s'\\mid s,a)\\) | Transition | Chance the action lands you in state \\(s'\\) |
+| \\(R(s,a)\\) | Reward | Immediate payoff for taking \\(a\\) in \\(s\\) |
+| \\(\\gamma\\) | **Discount factor** | How much tomorrow counts vs today (0 = myopic, 1 = far‑sighted) |
+| \\(\\pi\\) | Policy | Rule mapping each state to an action |
+
+Finite‑ vs infinite‑**horizon** MDPs simply decide whether the game eventually ends or repeats forever citeturn3file1.
+
+---
+
+## 4  |  A Mini‑MDP Walk‑Through – The Headache Dilemma  
+
+| State | Action | → State | Probability | Reward |
+|-------|--------|---------|-------------|--------|
+| Headache | Take pill | No‑headache | 0.7 | +1 |
+| Headache | Take pill | Headache | 0.3 | –1 |
+| Headache | Wait      | No‑headache | 0.2 | –1 |
+| Headache | Wait      | Headache   | 0.8 | –1 |
+| No‑headache | — (similar probabilities omitted for brevity) | | |
+
+1. **Initial values** \\(V_0(s)=0\\).  
+2. **First sweep (γ = 0.9).**
+
+\\[
+V_1(\text{Headache}) = \max\left\{
+\begin{aligned}
+&0.7(1)+0.3(-1) = 0.4 &&[\text{Take pill}]\\\\
+&0.2(-1)+0.8(-1) = -1 &&[\text{Wait}]
+\end{aligned}
+\right\}
+\\]
+
+So \\(V_1(\text{Headache})=0.4\\); further sweeps converge to the optimal **policy** “take pill if headache” citeturn3file1.
+
+---
+
+## 5  |  How to Solve an MDP – Cheat‑Sheet  
+
+```text
+# Value Iteration
+repeat
+    Δ ← 0
+    for each state s:
+        v ← V[s]
+        V[s] ← max_a Σ_{s'} P(s'|s,a)[ R(s,a) + γ V[s'] ]
+        Δ ← max(Δ, |v - V[s]|)
+until Δ < ε
+π(s) ← argmax_a Σ_{s'} P(s'|s,a)[ R(s,a) + γ V[s'] ]
+```
+
+```text
+# Policy Iteration
+initialize π arbitrarily
+loop
+    # Policy Evaluation
+    solve V^π from linear equations
+    # Policy Improvement
+    policy_stable ← true
+    for each state s:
+        old ← π(s)
+        π(s) ← argmax_a Σ_{s'} P(s'|s,a)[ R(s,a) + γ V^π[s'] ]
+        if old ≠ π(s): policy_stable ← false
+    if policy_stable: break
+```
+
+Other options: **Q‑learning** (learn \\(Q(s,a)\\) from samples) and **PPO** (gradient ascent on neural‑net policies) for huge, unknown state spaces citeturn3file2.
+
+---
+
+## 6  |  Where MDPs Shine in the Real World  
+
+*Healthcare*  
+- Liver‑donor accept/reject timing  
+- Diabetes medication schedules  
+- Statin therapy onset  
+- Breast‑cancer screening intervals  
+- Epidemic control plans citeturn3file7  
+
+*Other domains*  
+- Drug‑infusion pumps  
+- Medical needle steering  
+- Pilots’ eye‑scan patterns for situation awareness citeturn3file13  
+
+---
+
+## 7  |  Partial Observability in Medicine  
+
+Doctors never see the true patient state directly; they reason over **belief states** (probability distributions).  
+A **POMDP** extends an MDP with observation probabilities and belief‑state updates, enabling robust plans under hidden information citeturn3file14.
+
+---
+
+## 8  |  Utility Metrics that Matter  
+
+| Metric | What it measures | Used in |
+|--------|------------------|---------|
+| **QALY** | Quality‑adjusted life‑years gained | Transplants, chronic therapy citeturn3file7 |
+| **CPUC** | \$ per unit of health improvement | AI treatment planners; cut from \$497 to \$189 in simulation citeturn3file11 |
+
+---
+
+## 9  |  Stat‑Literacy Corner – Say Risks Clearly  
+
+| **Old framing** | **Transparent framing** |
+|-----------------|-------------------------|
+| “Cuts risk by 50 %” | “From 2 % down to **1 %** (absolute)” |
+| 5‑year survival | Mortality rate |
+| Conditional %s | Natural counts (e.g., 9 of 1 000) |
+| Benefits in relative terms, harms in absolute | Show both sides in the **same units** |
+
+These fixes stop manipulative hype and empower shared decisions citeturn3file19.
+
+---
+
+## 10  |  Take‑Home Checklist  
+
+- [x] Turn percentages into **counts** before doing Bayes.  
+- [x] Remember **γ**—tomorrow matters!  
+- [x] Use **value or policy iteration** for small models; **RL** for big, unknown ones.  
+- [x] Map your problem’s rewards to **QALY, CPUC, or dollars**.  
+- [x] Communicate risks with **absolute numbers**, not headline percentages.  
+
+---
+
+## 11  |  Glossary  
+
+| Term | Quick meaning |
+|------|---------------|
+| Natural frequency | Count out of a fixed population (e.g., 9/1 000) |
+| \\(γ\\) | Discount factor (0–1) |
+| Policy (π) | Decision rule mapping states → actions |
+| Belief state | Probabilistic guess of the hidden true state |
+| QALY | Quality‑adjusted life‑year |
+| CPUC | Cost per unit change |
+
+---
+
+*Last updated: 2025-05-11*
