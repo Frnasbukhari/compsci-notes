@@ -36,7 +36,6 @@ This practice set mirrors the tone, depth and notation style of the Week 1 lect
 7. **Noise characterisation**  
    A microphone captures $x(t)=f(t)+\varepsilon(t)$ where $\varepsilon(t)$ is *white* noise.  
    1. State one defining spectral property of white noise.  
-   2. Explain in one line why pink noise would not be an appropriate model here.
 
 8. **SNR quick check**  
    A signal segment has sample mean $\mu=0.8\,\text{V}$ and (biased) standard deviation $\sigma=0.2\,\text{V}$.  
@@ -78,8 +77,6 @@ This practice set mirrors the tone, depth and notation style of the Week 1 lect
 
     to look for slow cortical potentials (< 0.5 Hz).  
     1. Point out the *specific* step that risks eliminating the desired signal.  
-    2. Describe the mathematical rationale using the concept of operators on a space.  
-    3. Propose a safer alternative pipeline (two bullet points suffice).
 
 ---
 
@@ -115,7 +112,6 @@ This practice set mirrors the tone, depth and notation style of the Week 1 lect
 
 7. **Answer**  
    1) Flat power spectral density across all frequencies.  
-   2) Pink noise has 1/f spectrum, overweighting low frequencies—thus mismatching ambient microphone hiss.
 
 8. **Answer**  
    $\text{SNR} \approx 0.8 / 0.2 = 4$.
@@ -152,10 +148,3 @@ This practice set mirrors the tone, depth and notation style of the Week 1 lect
 12. **Answer**
 
       1. The **1 Hz high‑pass** filter.  
-      2. Its transfer function is ≈0 below 1 Hz; applying operator $H$ annihilates the subspace of interest.  
-      3. • Omit the high‑pass (or set cutoff ≤ 0.05 Hz).  
-         • Keep ICA → notch → low‑pass 30 Hz.
-
----
-
-*Use minis for quick drills; tackle extended problems for exam‑style practice. Have fun exploring the nature of data!*
