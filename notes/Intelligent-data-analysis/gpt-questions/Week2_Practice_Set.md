@@ -5,9 +5,6 @@ These questions focus on **ideas**, not heavy calculations.  Use them to check y
 ---
 
 ## Practice questions  
-*(Mini ≈ 5–8 min each  •  Short Essay ≈ 15 min each)*
-
-### Mini questions  
 
 1. **Spot the dimension**  
    The set $B=\{(1,0,0),(0,1,0),(0,0,1)\}$ lives in $\mathbb R^3$.  
@@ -28,38 +25,32 @@ These questions focus on **ideas**, not heavy calculations.  Use them to check y
    - GLM  
    Tasks: {trend estimation, denoising localised spikes, finding dominant frequencies, reducing dimensions of survey responses}.
 
-5. **Impulse intuition**  
-   Explain in two sentences what the discrete delta $\delta[n-k]$ does when used inside a sum representing a signal.
+5. **Conceptual basis change**  
+   Describe how a *change of basis* turns a time‑domain audio clip into a set of frequency amplitudes, and why this is still “the same signal”.
 
----
-
-### Short‑essay / discussion questions  
-
-6. **Conceptual basis change**  
-   Describe (≈ 120 words) how a *change of basis* turns a time‑domain audio clip into a set of frequency amplitudes, and why this is still “the same signal”.
-
-7. **Fourier vs. Wavelet (big picture)**  
+6. **Fourier vs. Wavelet (big picture)**  
    Without equations, compare the key *strength* and *limitation* of Fourier analysis relative to wavelets for analysing a drum beat that has sharp attacks and resonant tones.
 
-8. **Coordinate‑space thinking**  
-   In your own words (≤ 100 words) explain how viewing regression lines as *points* in a “space of lines” can make certain processing tasks (e.g.\ regularisation) conceptually clearer.
+7. **Coordinate‑space thinking**  
+   Explain how viewing regression lines as *points* in a “space of lines” can make certain processing tasks (e.g.\ regularisation) conceptually clearer.
 
 ---
 
 ## Brief answers  
 
-1. a) Dimension =3 . b) B is a basis; its vectors are independent and span the whole space, so coordinates $(x,y,z)$ are unique.  
+1.
+a) Dimension =3 .
+
+b) B is a basis; its vectors are independent and span the whole space, so coordinates $(x,y,z)$ are unique.  
 
 2. Fourier packs most image energy into a few low‑frequency coefficients → fewer numbers to save.  
 
 3. $\text{Price}=\beta_1 \times \text{Area}+\beta_0$.  
 
-4. Fourier → dominant frequencies; Wavelet → denoising spikes; PCA → dimension reduction; GLM → trend estimation.  
+4. Fourier → dominant frequencies; Wavelet → denoising spikes; PCA → dimension reduction; GLM → trend estimation.
 
-5. $\delta[n-k]$ is zero everywhere except $n=k$, so it “picks out” the $k$‑th sample’s amplitude inside a sum.  
+5. A change of basis re-expresses a time-domain audio signal using sine waves (frequencies) instead of time points. The Fourier transform does this, showing how much each frequency contributes. It’s still the same signal—just seen from a different angle, like changing from time to pitch.
 
-6.–8. (Any coherent explanation earning the key ideas: same information in new coordinates; Fourier global vs. wavelet local; coefficient‑space view simplifies operations.)
+6. Fourier is great for identifying steady tones but poor at timing sharp events. Wavelets capture both when and what happens, so they handle sharp drum hits better. Trade-off: Fourier gives exact pitch, wavelets give better timing.
 
----
-
-*Use these prompts to solidify **concepts** before diving into computations in later weeks.*
+7. Seeing regression lines as points in a space helps us control their complexity. Regularisation becomes moving toward simpler areas of that space—more intuitive and visual.
