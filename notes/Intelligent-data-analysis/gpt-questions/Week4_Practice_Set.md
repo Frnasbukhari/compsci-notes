@@ -1,23 +1,20 @@
 # Intelligent Data Analysis – Week&nbsp;4 Practice Workbook  
 **Topic:** Dimensional analysis by statistical independence (Independent Component Analysis)  
 
-*All questions are original and tuned to the depth & tone of past exam papers.  
-Marks in square brackets are guidance only.*
 
 ---
 
-## Section I – Quick‑fire Checks  (1 mark each)
+## Section I – Quick‑fire Checks 
 
 1. State the formal condition for statistical independence of two random variables $X$ and $Y$ using their joint distribution.
 2. Explain in one sentence why uncorrelated variables are **not necessarily** independent.
 3. Let $f(x)$ be a probability **density** function. Write the two normalisation conditions it must satisfy.
 4. Write the definition of the Shannon entropy $H(X)$ of a discrete variable $X$ with outcomes $x_i$.
 5. State **two** assumptions (besides independence) that ICA makes about the source signals.
-6. In a blind‑source separation setting, what is meant by *whitening* (or *sphering*) the data?
 
 ---
 
-## Section II – Short Worked Questions  (5 – 8 marks each)
+## Section II – Short Worked Questions 
 
 ### Q2  Discrete Entropy  
 A fair 4‑sided die has faces {1,2,3,4}. A **loaded** die is biased so that  
@@ -82,9 +79,8 @@ Observed mixtures $Y$ are obtained from **two** sources $X$ by
 
 ---
 
-## Section III – Extended Exam‑style Problems  (20 marks each)
+### Q6  “Mini Cocktail Party’’  
 
-### Problem A  “Mini Cocktail Party’’  
 You record two microphone signals in a room with **two** people speaking simultaneously.  
 The sensor model is  
 
@@ -95,22 +91,12 @@ The sensor model is
 
 where $s_1$ and $s_2$ are statistically independent speech sources.
 
-1. *(a)* Explain **why** PCA alone cannot fully separate the sources.  
-2. *(b)* Describe the pre‑processing steps you would perform **before** running an ICA algorithm such as FastICA.  
-3. *(c)* Assuming perfectly estimated un‑mixing matrix $W$, write expressions for the recovered sources $\hat s_1,\hat s_2$.  
-4. *(d)* Give **two** practical difficulties that arise when the true number of sources exceeds the number of sensors.  
-5. *(e)* If $s_1$ is Gaussian and $s_2$ is strongly super‑Gaussian, comment on how this affects ICA’s ability to separate them.
+*(a)* Explain **why** PCA alone cannot fully separate the sources.  
+*(b)* Describe the pre‑processing steps you would perform **before** running an ICA algorithm such as FastICA.  
+*(c)* Assuming perfectly estimated un‑mixing matrix $W$, write expressions for the recovered sources $\hat s_1,\hat s_2$.  
+*(d)* Give **two** practical difficulties that arise when the true number of sources exceeds the number of sensors.  
+*(e)* If $s_1$ is Gaussian and $s_2$ is strongly super‑Gaussian, comment on how this affects ICA’s ability to separate them.
 
----
-
-### Problem B  Entropy Maximisation Proof Sketch  
-Show that, under a **volume‑preserving** (det W=1) linear transform of whitened data,  
-maximising the **negentropy**
-
-$$J(X)=H(X_{\text{gauss}})-H(X)$$  
-
-is equivalent to minimising the differential entropy $H(X)$.  
-Outline each logical step and state any theorems you invoke.
 
 ---
 
@@ -128,7 +114,6 @@ Outline each logical step and state any theorems you invoke.
 3. (i) $f(x)\ge0$ ∀$x$; (ii) $\int_{-\infty}^{\infty} f(x)\,dx =1$.  
 4. $H(X)=-\sum_i P(x_i)\log_2 P(x_i)$.  
 5. Sources have **non‑Gaussian** distributions and zero mean (data are centred); also the mixing is **linear & stationary**.  
-6. Whitening rescales/rotates the centered data so that $\text{cov}(Y)=I$, i.e. unit variance and uncorrelated dimensions.
 
 ---
 
@@ -173,29 +158,19 @@ Since at least one cell violates the factorisation, $A$ and $B$ are **not** inde
 
 ---
 
-### Section III Solutions (Outline)
-
-#### Problem A  
+#### Q6
 (a) PCA enforces **orthogonality**; independence is a stronger, nonlinear criterion, so PCA can at best decorrelate but not fully demix sources that are still dependent in higher‑order statistics.  
 (b) Steps: centre the data; whiten (eigen‑ or SVD‑based); optionally reduce dimensionality; initialise $W$.  
 (c) $\hat s=W y$ with **W = β⁻¹**
 
-|        | **y₁** | **y₂** |
-|--------|-------:|-------:|
-| **s₁** | 1.333  | −0.833 |
-| **s₂** | −0.500 | 1.167  |
+$$\hat{s}_1(t) = 1.951 \cdot y_1(t) - 1.220 \cdot y_2(t)$$
 
-, etc.  
+$$\hat{s}_2(t) = -0.732 \cdot y_1(t) + 1.707 \cdot y_2(t)$$
+
+
 (d) More sources than sensors → mixing matrix non‑square: not invertible; need sparse or temporal structure to separate; under‑determined ICA.  
 (e) Super‑Gaussian signals usually dominate the contrast functions (e.g. kurtosis); the Gaussian source may be poorly separated because its negentropy is zero.
 
----
-
-#### Problem B  
-- For whitened data $\text{cov}(X)=I$.  
-- det $W=1$ preserves volume ⇒ no Jacobian term in entropy change.  
-- $J=H_{\text{gauss}}-H(X)$ with $H_{\text{gauss}}$ constant; maximising $J$ ⇔ minimising $H(X)$.  
-- By maximum‑entropy theorem, Gaussian has highest entropy among equal‑covariance distributions; hence minimising $H$ moves away from Gaussianity, which underlies ICA’s contrast functions.
 
 </details>
 
