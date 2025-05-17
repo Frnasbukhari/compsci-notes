@@ -116,8 +116,7 @@ $\Sigma = $
 |-15|25|
 
 1. **Diagonalise** $\Sigma$ via eigendecomposition.  
-2. **Interpret** the eigenvectors in plain English: what portfolio directions do they represent?  
-3. A regulatory cap says you may ignore any component explaining <5 % variance. Under this rule, how many dimensions survive? Show numbers.  
+2. A regulatory cap says you may ignore any component explaining <5 % variance. Under this rule, how many dimensions survive? Show numbers.  
 
 ---
 
@@ -216,10 +215,12 @@ $Av\neq\lambda v$ for any scalar $\lambda$, so **no**, $v$ is not an eigenvector
 ---
 
 ### Q7 Solution  
-1. Eigenvalues: 40 and 10.  
+1.
 
-2. Eigenvectors: $[1,-1]^T/\sqrt2$ (long/short) and $[1,1]^T/\sqrt2$ (balanced).  
+Eigenvalues: 40 and 10.  
 
-3. Variance shares: 80 % and 20 %. Both >5 %, so **2 dimensions survive**.
+Eigenvectors: $[1,-1]^T$ and $[1,1]^T$.  
+
+2. Variance shares: 80 % and 20 %. Both >5 %, so **2 dimensions survive**.
 
 </details>
