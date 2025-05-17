@@ -1,16 +1,5 @@
-# Week&nbsp;3 Practice Set  
+# Week 3 Practice Set  
 **Dimensional Analysis by Covariance — Eigendecomposition & PCA**
-
----
-
-## How to use this deck
-* **Mini‑sprints** (Q1–Q6) hone recall & quick‑calc reflexes.  
-* **Board‑room scenarios** (Q7–Q8) mimic the 20‑mark exam blocks: scaffold, compute, interpret.  
-* **Full solutions** sit at the back — keep them quarantined until you’ve pulled your own numbers.
-
-Math is rendered with **$...$** delimiters.
-
----
 
 ## Mini‑sprint Questions
 
@@ -74,20 +63,9 @@ $\mu = $
 $X' = $  
 
 
-
 ---
 
-### Q5 Multiple‑choice — eigen lore  
-Which of the following is **always** true for a real symmetric covariance matrix?  
-
-A. All eigenvalues are positive or zero.  
-B. Eigenvectors corresponding to distinct eigenvalues are orthogonal.  
-C. The trace equals the product of the eigenvalues.  
-D. Options A and B.
-
----
-
-### Q6 Fast eigen‑test  
+### Q5 Fast eigen‑test  
 Let  
 
 $A = $  
@@ -107,7 +85,7 @@ Is $v$ an eigenvector of $A$? If **yes**, state the eigenvalue; if **no**, justi
 
 ## Board‑room Scenarios
 
-### Q7 Full‑cycle PCA on a 3‑D portfolio  
+### Q6 Full‑cycle PCA on a 3‑D portfolio  
 You manage a micro‑fund tracking three risk metrics $\{R_1,R_2,R_3\}$. Six weekly observations are:
 
 | Week | $R_1$ | $R_2$ | $R_3$ |
@@ -128,7 +106,7 @@ You manage a micro‑fund tracking three risk metrics $\{R_1,R_2,R_3\}$. Six wee
 
 ---
 
-### Q8 Eigen‑driven investment hedge  
+### Q7 Eigen‑driven investment hedge  
 A $2\times2$ covariance matrix for returns is  
 
 $\Sigma = $  
@@ -150,7 +128,7 @@ $\Sigma = $
 
 ### Q1 Solution  
 1. $\bar X = \dfrac{4+2+5+3+4}{5}=3.6$,  $\bar Y = \dfrac{7+3+6+4+5}{5}=5.0$.  
-2. $s_{XY}=\dfrac{1}{4}\sum(x_i-\bar X)(y_i-\bar Y)=1.65$.
+2. $s_{XY}=\dfrac{1}{4}\sum(x_i-\bar X)(y_i-\bar Y)=1.5$.
 
 ---
 
@@ -195,16 +173,11 @@ $X'$
 ---
 
 ### Q5 Solution  
-**D.** Real symmetric covariance matrices are positive‑semi‑definite and have orthogonal eigenvectors. Trace equals the **sum**, not product, of eigenvalues.
-
----
-
-### Q6 Solution  
 $Av\neq\lambda v$ for any scalar $\lambda$, so **no**, $v$ is not an eigenvector.
 
 ---
 
-### Q7 Solution  
+### Q6 Solution  
 
 1. $\mu=[2.5,1.0,1.0]$.  
 
@@ -242,7 +215,7 @@ $Av\neq\lambda v$ for any scalar $\lambda$, so **no**, $v$ is not an eigenvector
 
 ---
 
-### Q8 Solution  
+### Q7 Solution  
 1. Eigenvalues: 40 and 10.  
 
 2. Eigenvectors: $[1,-1]^T/\sqrt2$ (long/short) and $[1,1]^T/\sqrt2$ (balanced).  
