@@ -21,9 +21,6 @@ This practice pack blends quick‑fire checks with longer, exam‑style items th
 4. **Low‑Rank Idea**  
    In one sentence each, give *two* practical motivations for keeping only the largest $k$ singular values (a low‑rank approximation) in LSA.
 
-5. **Cosine vs. Dot Product**  
-   Show that for two *centred* document vectors $d_i$ and $d_j$, maximising the cosine of the angle between them is equivalent to maximising their dot product.
-
 ---
 
 ### B. Exam‑Style Problems
@@ -94,9 +91,6 @@ Using the same matrix $A$ from Problem 2:
    * Reduces storage and compute cost for huge sparse matrices.  
    * Groups near‑synonymous terms, mitigating sparsity and polysemy.
 
-5. **Cosine vs. Dot Product**
-
-   For centred vectors, $\|d_i\|$ and $\|d_j\|$ are constants. Maximising $\cos\theta = \dfrac{d_i^{\top}d_j}{\|d_i\|\,\|d_j\|}$ is equivalent to maximising the numerator, i.e. the dot product.
 
 ---
 
@@ -148,7 +142,3 @@ Using the same matrix $A$ from Problem 2:
 1. Keep the two largest singular values $\sigma_1, \sigma_2$ and their corresponding singular vectors. Zero‑out $\sigma_3$ to build $\Sigma_2$, then form $A_{(2)} = U_2 \Sigma_2 V_2^{\top}$.  
 2. Geometrically, the data cloud is projected onto a 2‑D plane inside the original 3‑D space; variance along the discarded axis is lost.  
 3. *Benefit*: noise suppression and faster classifiers. *Drawback*: risk of discarding discriminative information tied to the smallest singular value.
-
----
-
-*End of pack – practice hard & iterate!*  
