@@ -1,8 +1,5 @@
 # **Pocket Examples – Intelligent Interactive Systems**
 
-*Memorise these “drop‑in” mini‑answers, then tailor the names, numbers and context to match whatever scenario the exam gives you.*
-
----
 
 ## 1 · Markov Decision Process (MDP) “Two‑State Health” Template
 
@@ -120,46 +117,3 @@ Find **mixed NE** by equalising expected payoffs (show one line, skip algebra in
 
 > Increase threshold → FP↓ Precision↑ Recall↓ (vice‑versa).
 
----
-
-## 7 · Ethics Essay Skeleton (15 marks)
-
-1. **Intro (≤ 40 words)** – State scenario & thesis.  
-2. **Risk 1 Privacy** – Chat logs store sensitive data → GDPR Art 5, 25.  
-3. **Risk 2 Bias** – Training skew → disparate impact.  
-4. **Risk 3 Transparency** – Black‑box RL hides rationale.  
-5. **Benefits** – Personalised support, scalability.  
-6. **Safeguards** – DP, fairness re‑weighting, model cards, human‑review.  
-7. **Conclusion** – Balance, recommend oversight board.
-
-*(Aim 220–250 words)*
-
-> Swap risks/regs to hiring, finance, healthcare as needed.
-
----
-
-### Rapid Substitution Cheatsheet
-
-| Placeholder | Replace with… |
-|-------------|---------------|
-| **State H/S** | *Battery Full/Low*, *Happy/Angry*, *On‑task/Distracted* |
-| **Rewards** | \$, time saved, calories burnt |
-| **Test stats** | Sensitivity, specificity numbers given |
-| **Money amounts** | Points, minutes, reputation |
-| **Actors** | User vs Bot, Human vs Robot, Two AI agents |
-
----
-
-### Micro‑Checklist Before the Exam
-
-- [ ] Can derive Bellman in ≤ 3 min  
-- [ ] Can rebuild frequency table in ≤ 2 min  
-- [ ] Memorised 2×2 matrix payoffs  
-- [ ] Know recall vs precision trade‑off effect  
-- [ ] Have 3 GDPR articles ready (5, 25, 35)  
-- [ ] Ethical safeguards list fluent
-
----
-
-*These templates align with patterns in 2023–2024 exams, mock paper and the professor’s hint sheet.*  
-When the paper lands, **swap scenario nouns & tweak numbers** – 90 % of the work is done!  
