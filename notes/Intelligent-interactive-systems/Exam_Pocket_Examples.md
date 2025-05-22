@@ -11,16 +11,15 @@
 | **Rewards**        | +1 (E) / 0 (R) | −1 (M) / −2 (I) |
 | **Transitions**    | P(H→H|E)=0.9, H→S=0.1 | P(S→H|M)=0.6, S→S=0.4 |
 
-*Bellman optimality sketch*  
+*Bellman optimality sketch*
 
 $$
-
 \begin{aligned}
-V(H) &= \max\bigl\{1+0.9V(H)+0.1V(S), \, 0+V(H)\bigr\}\\
-V(S) &= \max\bigl\{-1+0.6V(H)+0.4V(S), \, -2+V(S)\bigr\}
+V(H) &= \max\Bigl\\{\,1 + 0.9\,V(H) + 0.1\,V(S),\; V(H)\\Bigr\\}\\
+V(S) &= \max\Bigl\\{\,-1 + 0.6\,V(H) + 0.4\,V(S),\; -2 + V(S)\\Bigr\\}
 \end{aligned}
-
 $$
+
 
 Solve quickly:
 1. Assume optimal actions *E* in **H**, *M* in **S**.
@@ -36,11 +35,23 @@ Solve quickly:
 
 *Given episode (H, E) → reward +1 → next H*
 
-$$
-
-Q_{new}(H,E)=Q_{old}(H,E)+α\,[1 + γ·\underbrace{\max_{a'}Q(H,a')}_{Q(H,E)} - Q_{old}(H,E)]
+Here is the Q-update rule in state **H** with action **E**:
 
 $$
+Q_{\text{new}}(H,E)
+  = Q_{\text{old}}(H,E)
+    + \alpha
+      \Bigl[
+        1
+        + \gamma
+          \max_{a'} Q(H,a')
+        - Q_{\text{old}}(H,E)
+      \Bigr]
+$$
+
+
+
+
 
 *Plug α=0.5, γ=0.9, Q_{old}(H,E)=0.4 → **0.7***.
 
@@ -59,9 +70,7 @@ $$
 *Numbers derive from*: prevalence 1 % (→10), sensitivity 80 % (→8 TP), false‑positive 9 % (→89 FP).  
 
 $$
-
 P(Disease\,|\,+) = \frac{8}{97} \approx 8.2\,\%
-
 $$
 
 > **Swap prevalence/sensitivity/FP rate**, recalc three cells, then divide.
