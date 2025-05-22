@@ -1,23 +1,5 @@
 # Intelligent Interactive Systems – **Comprehensive Study Guide**
 
-*Built from 2023–2024 past papers, mock paper, essay hand‑outs and professor’s own “possible questions” list.*
-
----
-
-## 0 · How the exam works
-
-| Item | Pattern |
-|------|---------|
-| **Questions** | 3 compulsory, 20 marks each (total 60 → rescaled) |
-| **Sub‑parts** | (a) *Define/compute* ~6 marks (b) *Apply/design* ~6–8 marks (c) *Critique/ethics* ~8 marks |
-| **Timing** | 2 h ⇒ ~40 min/question ⇒ 6–6–8 min per sub‑part |
-| **Answer length** | ≈ 10 words per mark (200–250 words per sub‑part) |
-| **Rubric tip** | Each sub‑part is **self‑contained** – no cross‑references |
-
-**Strategy:** open with a one‑sentence scenario recap, keep maths neat, end critiques with 2–3 concrete safeguards.
-
----
-
 ## 1 · Core technical theories
 
 ### 1.1 Markov Decision Processes (MDPs)
@@ -214,33 +196,3 @@ Use dev set + Precision‑Recall curve to pick operating point.
 * **Bayes = “**Like × Prior / Evidence**”**  
 * **Prospect = “**LOSS LOST**”** (Loss‑Over‑Shifts, Small‑p‑Overweight, Large‑p‑Underweight, Reference‑Shifted, **T**‑funk curve)  
 * **Ethics = “**PPBAT**”** (Privacy, Bias, Accountability, Transparency)
-
----
-
-## 6 · Seven‑day crash plan
-
-| Day | Focus | Tasks |
-|-----|-------|-------|
-| 1 | Bellman & MDPs | Derive eqn, build 3 toy MDPs |
-| 2 | Bayesian drills | 10 frequency tables + commentary |
-| 3 | Prospect theory | Write 3 framing dialogues |
-| 4 | Game theory | Solve 5 payoff matrices |
-| 5 | Classification | Compute P/R/F1 on sample data |
-| 6 | Ethics essay | Draft AI‑recruitment essay in 25 min |
-| 7 | Full mock | Sit 2024 paper under timed conditions |
-
----
-
-### Final checklist (tick them!)
-
-- [ ] Recite Bellman without notes  
-- [ ] Convert any Bayes problem to 1000‑person table  
-- [ ] Sketch prospect value curve from memory  
-- [ ] Identify mixed NE in 2×2 and 3×3 games  
-- [ ] Explain precision vs recall trade‑off  
-- [ ] Recall five AI ethics principles & mitigations  
-- [ ] Produce timing plan: 6‑6‑8 min / part  
-
----
-
-Good luck – **you’ve got this**!
