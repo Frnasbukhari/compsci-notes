@@ -1,3 +1,5 @@
+# GPT Exam Style Practice Questions 
+
 ## QUESTION 1 – “ENGINEERING / LOCAL-SEARCH DESIGN”
 *(single-objective, often constrained)*
 
@@ -29,7 +31,7 @@ A week-long rota must cover 3 shifts/day obeying legal rest rules.
 Electronic parts must be placed on a fixed grid to minimise total wire length; parts cannot overlap.
 
 1. **Binary vs permutation encodings:** discuss pros/cons for this task. [4]
-2. **Simulated Annealing pseudocode** (Manhattan cost, cooling $T_k = T_0 / \log(k+1)$). [6]
+2. **Simulated Annealing pseudocode** Manhattan cost, cooling $T_k = T_0 / \log(k+1)$. [6]
 3. **Static death-penalty for overlaps:** effect on acceptance; worked 4-component example. [4]
 4. **Two strategies to escape long plateaux—criticise each.** [6]
 
@@ -126,10 +128,10 @@ Assume $\mu=\lambda=n$, mutation rate $1/n$.
 ---
 
 ### Q3-D  Dynamic Penalty Schedules – Formal Analysis
-1. **Penalty-augmented fitness:** constraint $g(x)\le 0$, coefficient $lpha(t)$. [3]
-2. **Proof** for $lpha(t)=lpha_0\cdot t$ reaching feasible optimum in $O(n/\epsilon)$ evals. [9]
-3. **Rapid $lpha(t)$ growth:** death-penalty scenario; 2-point search example. [4]
-4. **Alternative** (e.g. ε-constraint) + compare theoretical guarantees. [4]
+1. **Penalty-augmented fitness:** constraint $g(x) \le 0$, coefficient $\alpha(t)$. [3]
+2. **Proof** for $\alpha(t)=\alpha_0 \cdot t$ reaching a feasible optimum in $O(n/\epsilon)$ evaluations. [9]
+3. **Rapid $\alpha(t)$ growth:** recreating a death-penalty scenario; illustrated with a 2-point search example. [4]
+4. **Alternative approach** (e.g., ε-constraint; feasibility rules) and comparison of theoretical guarantees. [4]
 
 ---
 
